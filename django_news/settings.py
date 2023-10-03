@@ -95,7 +95,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'django_news',
         'USER': 'postgres',
-        'PASSWORD':'mk202002',
+        'PASSWORD':'123456',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
