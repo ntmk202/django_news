@@ -1,9 +1,9 @@
 {% extends 'layouts/base.html' %}{% load i18n %}{% load static %} {% block header %}
-<meta name="description" content="{{post.short_description}}"/>
+<meta name="description" content="{{post.Description}}"/>
 <meta name="meta-keywords" content="{{post.meta_keywords}}"/>
 <meta name="og:title" content="{{post.title}}"/>
 <meta name="og:url" content="{{request.get_full_path}}"/>
-<meta name="og:description " content="{{post.short_description}}"/>
+<meta name="og:description " content="{{post.Description}}"/>
 <meta name="og:image" content="{{post.banner_path.url}}"/>
 
 <style>

@@ -164,7 +164,7 @@
                       </div>
                     </div>
                     <p style="margin-bottom: 0px; text-align: justify">
-                      {{lpost.short_description|truncatechars:200}}
+                      {{lpost.Description|truncatechars:200}}
                     </p>
                   </div>
                   {% endfor %}
@@ -197,7 +197,7 @@
                   >{{lpost.date_created|date:"M d, Y"}}</span
                 >
                 <p style="margin-bottom: 0px; text-align: justify">
-                  {{lpost.short_description|truncatechars:250}}
+                  {{lpost.Description|truncatechars:250}}
                 </p>
                 <a
                   href="{% url 'view-post' lpost.pk %}"
