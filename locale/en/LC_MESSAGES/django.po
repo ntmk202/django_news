@@ -1,0 +1,439 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-01 22:29+0700\n"
+"PO-Revision-Date: 2023-10-01 22:28+0000\n"
+"Last-Translator:   <admin@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.9\n"
+
+#: .\about\models.py:8 .\newsApp\models.py:13 .\newsApp\models.py:44
+msgid "name"
+msgstr "Name"
+
+#: .\about\models.py:14 .\newsApp\models.py:26
+msgid "content"
+msgstr "Content"
+
+#: .\django_news\settings.py:126
+msgid "English"
+msgstr "en"
+
+#: .\django_news\settings.py:127
+msgid "Vietnamese"
+msgstr "vi"
+
+#: .\newsApp\forms.py:9
+msgid "The Username field is required."
+msgstr "The Username field is required."
+
+#: .\newsApp\forms.py:10
+msgid "The Email field is required."
+msgstr "The Email field is required."
+
+#: .\newsApp\forms.py:11
+msgid "The First Name field is required."
+msgstr "The  First Name field is required."
+
+#: .\newsApp\forms.py:12
+msgid "The Last Name field is required."
+msgstr "The  Last Name field is required."
+
+#: .\newsApp\forms.py:76
+msgid "Selected User is invalid"
+msgstr "Selected User is invalid"
+
+#: .\newsApp\forms.py:95
+msgid "Post ID is invalid"
+msgstr "Post ID is invalid"
+
+#: .\newsApp\models.py:15 .\newsApp\models.py:28
+msgid "status"
+msgstr "Status"
+
+#: .\newsApp\models.py:15
+msgid "Active"
+msgstr "active"
+
+#: .\newsApp\models.py:15
+msgid "Inactive"
+msgstr "inactive"
+
+#: .\newsApp\models.py:24 .\newsApp\models.py:58
+msgid "title"
+msgstr "Title"
+
+#: .\newsApp\models.py:25
+msgid "short_description"
+msgstr "Short description"
+
+#: .\newsApp\models.py:28 .\newsApp\templates\manage_post.html:73
+#: .\newsApp\templates\manage_post.html:75
+msgid "Published"
+msgstr "publish"
+
+#: .\newsApp\models.py:28 .\newsApp\templates\manage_post.html:78
+#: .\newsApp\templates\manage_post.html:80
+msgid "Unpublished"
+msgstr "unpublish"
+
+#: .\newsApp\models.py:29
+msgid "category"
+msgstr "Category"
+
+#: .\newsApp\models.py:31
+msgid "banner_path"
+msgstr "Banner path"
+
+#: .\newsApp\models.py:45
+msgid "subject"
+msgstr "Subject"
+
+#: .\newsApp\models.py:46
+msgid "message"
+msgstr "Message"
+
+#: .\newsApp\models.py:48
+msgid "comment"
+msgstr "Comment"
+
+#: .\newsApp\templates\about.html:12
+#: .\newsApp\templates\layouts\top-navigation.html:36
+msgid "About"
+msgstr "About"
+
+#: .\newsApp\templates\about.html:21
+#: .\newsApp\templates\layouts\footer.html:78
+#: .\newsApp\templates\layouts\top-navigation.html:37 .\newsApp\views.py:224
+msgid "News"
+msgstr "News"
+
+#: .\newsApp\templates\about.html:48 .\newsApp\templates\home.html:207
+#: .\newsApp\templates\home.html:229
+msgid "Read more"
+msgstr "Read more"
+
+#: .\newsApp\templates\about.html:53
+msgid "Partners"
+msgstr "Partners"
+
+#: .\newsApp\templates\category.html:5
+msgid "Posts"
+msgstr "Posts"
+
+#: .\newsApp\templates\category.html:30 .\newsApp\templates\home.html:21
+#: .\newsApp\templates\home.html:40 .\newsApp\templates\home.html:128
+#: .\newsApp\templates\home.html:255 .\newsApp\templates\posts.html:29
+#: .\newsApp\templates\posts.html:70 .\newsApp\templates\single_post.html:28
+msgid "By"
+msgstr "By"
+
+#: .\newsApp\templates\category.html:51 .\newsApp\templates\category.html:65
+#: .\newsApp\templates\home.html:51
+msgid "Previous"
+msgstr "Previous"
+
+#: .\newsApp\templates\category.html:101 .\newsApp\templates\category.html:113
+#: .\newsApp\templates\home.html:55
+msgid "Next"
+msgstr "Next"
+
+#: .\newsApp\templates\category.html:134 .\newsApp\templates\home.html:180
+#: .\newsApp\templates\posts.html:93 .\newsApp\templates\single_post.html:132
+msgid "Latest News"
+msgstr "Latest News"
+
+#: .\newsApp\templates\home.html:62 .\newsApp\templates\layouts\footer.html:75
+msgid "About us"
+msgstr "About us"
+
+#: .\newsApp\templates\home.html:82
+msgid "All the news"
+msgstr "All the news"
+
+#: .\newsApp\templates\home.html:88
+msgid "See all"
+msgstr "See all"
+
+#: .\newsApp\templates\layouts\footer.html:19
+msgid ""
+"Generate Lorem Ipsum placeholder text for use in your graphic, print and web "
+"layouts, and discover plugins for your favorite writing, design and blogging "
+"tools."
+msgstr ""
+"Generate Lorem Ipsum placeholder text for use in your graphic, print and web "
+"layouts, and discover plugins for your favorite writing, design and blogging "
+"tools."
+
+#: .\newsApp\templates\layouts\footer.html:69
+msgid "Explore"
+msgstr "Explore"
+
+#: .\newsApp\templates\layouts\footer.html:72
+#: .\newsApp\templates\layouts\top-navigation.html:35 .\newsApp\views.py:41
+msgid "Home"
+msgstr "Home"
+
+#: .\newsApp\templates\layouts\footer.html:83
+msgid "Company"
+msgstr "Company"
+
+#: .\newsApp\templates\layouts\footer.html:85
+msgid "Terms"
+msgstr "Terms"
+
+#: .\newsApp\templates\layouts\footer.html:86
+msgid "Policy"
+msgstr "Policy"
+
+#: .\newsApp\templates\layouts\footer.html:88
+msgid "Contact Us"
+msgstr "Contact Us"
+
+#: .\newsApp\templates\layouts\top-navigation.html:32
+msgid "Search"
+msgstr "Search"
+
+#: .\newsApp\templates\layouts\top-navigation.html:54
+#: .\newsApp\templates\login.html:29 .\newsApp\templates\login.html:50
+#: .\newsApp\templates\update_profile.html:43
+msgid "Login"
+msgstr "Login"
+
+#: .\newsApp\templates\layouts\top-navigation.html:59 .\newsApp\views.py:130
+msgid "Profile"
+msgstr "Profile"
+
+#: .\newsApp\templates\layouts\top-navigation.html:60 .\newsApp\views.py:142
+msgid "New Post"
+msgstr "New Post"
+
+#: .\newsApp\templates\layouts\top-navigation.html:61
+msgid "All Posts"
+msgstr "All Posts"
+
+#: .\newsApp\templates\layouts\top-navigation.html:62
+msgid "Logout"
+msgstr "Logout"
+
+#: .\newsApp\templates\login.html:36 .\newsApp\templates\profile.html:18
+#: .\newsApp\templates\update_profile.html:24
+msgid "Username"
+msgstr "Username"
+
+#: .\newsApp\templates\login.html:40
+msgid "Password"
+msgstr "Password"
+
+#: .\newsApp\templates\manage_post.html:26
+msgid "Update Post"
+msgstr "Update Post"
+
+#: .\newsApp\templates\manage_post.html:26
+msgid "Create New Post"
+msgstr "Create New Post"
+
+#: .\newsApp\templates\manage_post.html:33
+msgid "Title"
+msgstr "Title"
+
+#: .\newsApp\templates\manage_post.html:37
+msgid "Category"
+msgstr "Category"
+
+#: .\newsApp\templates\manage_post.html:52
+msgid "Short Description"
+msgstr "Short description"
+
+#: .\newsApp\templates\manage_post.html:56
+msgid "Content"
+msgstr "Content"
+
+#: .\newsApp\templates\manage_post.html:60
+msgid "Banner Image"
+msgstr "Banner Image"
+
+#: .\newsApp\templates\manage_post.html:62
+msgid "Choose file..."
+msgstr "Choose file..."
+
+#: .\newsApp\templates\manage_post.html:70
+msgid "Status"
+msgstr "Status"
+
+#: .\newsApp\templates\manage_post.html:87
+msgid "Save"
+msgstr "Save"
+
+#: .\newsApp\templates\manage_post.html:111
+msgid "Please select category here"
+msgstr "Please select category here"
+
+#: .\newsApp\templates\manage_post.html:116
+msgid "Write your content here"
+msgstr "Write your content here"
+
+#: .\newsApp\templates\posts.html:5
+msgid "Result of"
+msgstr "Result of"
+
+#: .\newsApp\templates\posts.html:46
+msgid "All news"
+msgstr "All news"
+
+#: .\newsApp\templates\profile.html:7
+msgid "My Profile"
+msgstr "My Profile"
+
+#: .\newsApp\templates\profile.html:14
+msgid "Fullname"
+msgstr "Fullname"
+
+#: .\newsApp\templates\profile.html:27
+#: .\newsApp\templates\update_password.html:12 .\newsApp\views.py:111
+msgid "Update Password"
+msgstr "Update Password"
+
+#: .\newsApp\templates\profile.html:28 .\newsApp\views.py:90
+msgid "Update Profile"
+msgstr "Update Profile"
+
+#: .\newsApp\templates\single_post.html:11
+msgid "No comment has been posted yet."
+msgstr "No comment has been posted yet."
+
+#: .\newsApp\templates\single_post.html:48 .\newsApp\views.py:138
+msgid "Edit Post"
+msgstr "Edit Post"
+
+#: .\newsApp\templates\single_post.html:49
+msgid "Delete Post"
+msgstr "Delete Post"
+
+#: .\newsApp\templates\single_post.html:56
+msgid "Comments"
+msgstr "Comments"
+
+#: .\newsApp\templates\single_post.html:73
+msgid "Delete Comment"
+msgstr "Delete Comment"
+
+#: .\newsApp\templates\single_post.html:85
+msgid "Leave a Comment"
+msgstr "Leave a Comment"
+
+#: .\newsApp\templates\single_post.html:105
+msgid "Subject"
+msgstr "Subject"
+
+#: .\newsApp\templates\single_post.html:108
+msgid "Message"
+msgstr "Message"
+
+#: .\newsApp\templates\single_post.html:111
+msgid "Submit Comment"
+msgstr "Submit Comment"
+
+#: .\newsApp\templates\update_password.html:25
+msgid "Update"
+msgstr "Update"
+
+#: .\newsApp\templates\update_profile.html:7
+msgid "Update Account Details"
+msgstr "Update Account Details"
+
+#: .\newsApp\templates\update_profile.html:16
+msgid "First Name"
+msgstr "First Name"
+
+#: .\newsApp\templates\update_profile.html:20
+msgid "Last Name"
+msgstr "Last Name"
+
+#: .\newsApp\templates\update_profile.html:32
+msgid "Enter Password"
+msgstr "Enter Password"
+
+#: .\newsApp\views.py:15
+msgid "Simple News Portal"
+msgstr "Simple News Portal"
+
+#: .\newsApp\views.py:17
+msgid "News Portal"
+msgstr "News Portal"
+
+#: .\newsApp\views.py:26
+msgid " About page"
+msgstr "About us"
+
+#: .\newsApp\views.py:76 .\newsApp\views.py:78
+msgid "Incorrect username or password"
+msgstr "Incorrect username or password"
+
+#: .\newsApp\views.py:100
+msgid "Profile has been updated"
+msgstr "Profile has been updated"
+
+#: .\newsApp\views.py:116
+msgid "Your Account Password has been updated successfully"
+msgstr "Your Account Password has been updated successfully"
+
+#: .\newsApp\views.py:165
+msgid "Post has been saved successfully."
+msgstr "Post has been saved successfully."
+
+#: .\newsApp\views.py:174 .\newsApp\views.py:217
+msgid "Request has no data sent."
+msgstr "Request has no data sent."
+
+#: .\newsApp\views.py:208
+msgid "Comment has been saved successfully."
+msgstr "No comment has been posted yet."
+
+#: .\newsApp\views.py:238 .\newsApp\views.py:243
+msgid "File not Found"
+msgstr "File not Found"
+
+#: .\newsApp\views.py:272 .\newsApp\views.py:280
+msgid "Post ID is Invalid"
+msgstr "Post ID is invalid"
+
+#: .\newsApp\views.py:277
+msgid "Post has been deleted successfully."
+msgstr "Post has been deleted successfully."
+
+#: .\newsApp\views.py:289 .\newsApp\views.py:297
+msgid "Comment ID is Invalid"
+msgstr "Post ID is invalid"
+
+#: .\newsApp\views.py:294
+msgid "Comment has been deleted successfully."
+msgstr "No comment has been posted yet."
+
+#: .\newsApp\views.py:308
+msgid "Search for "
+msgstr "Search"
+
+#~ msgid "{category.name} Posts"
+#~ msgstr "{category.name} Posts"
+
+#~ msgid "Language"
+#~ msgstr "Language"
+
+#~ msgid "Feedbacks"
+#~ msgstr "Feedbacks"
+
+#~ msgid "meta_keywords"
+#~ msgstr "meta keywords"

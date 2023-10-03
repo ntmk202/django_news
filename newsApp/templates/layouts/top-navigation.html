@@ -1,0 +1,76 @@
+{% load static %} {% load i18n %}
+<header class="header-area">
+    <!-- Navbar Area -->
+    <div class="newsbox-main-menu" style="height: 80px;">
+        <div class="classy-nav-container breakpoint-off" >
+            <div class="container-fluid">
+                <!-- Menu -->
+                <nav class="classy-navbar justify-content-between" id="newsboxNav" style="height: 80px;">
+
+                    <!-- Nav brand -->
+                    <a href="{%url 'home-page'%}" class="nav-brand"><img src="{% static 'img/core-img/logo.png' %}" alt=""></a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <li class="m-2">
+                                    <form class="form-inline" method=POST action="{% url 'search-new' %}">
+                                        {% csrf_token %}
+                                        <input class="form-control mr-sm-1" type="search" placeholder="{% trans 'Search'%}" name="searched">
+                                    </form>
+                                </li>
+                                <li><a href="{%url 'home-page'%}">{% trans 'Home'%}</a></li>
+                                <li><a href="{%url 'about-page'%}">{% trans 'About'%}</a></li>
+                                <li><a href="{%url 'news'%}">{% trans 'News'%}</a></li>
+                                {% for category in categories %}
+                                <li><a href="{% url 'category-post' category.id %}">{{category}}</a></li>
+                                {% endfor %}
+                                <li>
+                                    {% get_current_language as CURRENT_LANGUAGE %}
+                                    {% get_available_languages as AVAILABLE_LANGUAGES %}
+                                    {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+                                    <select class="form-select border p-1" aria-label="Language" onchange="location = this.value;">
+                                        {% for language in languages %}
+                                            <option value="/{{ language.code }}/" {% if language.code == CURRENT_LANGUAGE %} selected{% endif %}>
+                                                {{ language.name_local }}
+                                            </option>
+                                        {% endfor %}
+                                    </select>
+                                </li>
+                                {% if not user.id %}
+                                <li><a href="{% url 'login-page' %}">{% trans 'Login'%}</a></li>
+                                {% else %}
+                                <li>
+                                    <a href="#">{{user.username}}</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{% url 'profile-page' %}">{% trans 'Profile'%}</a></li>
+                                        <li><a href="{% url 'new-post' %}">{% trans 'New Post'%}</a></li>
+                                        <li><a href="{% url 'all-posts' %}">{% trans 'All Posts'%}</a></li>
+                                        <li><a href="{% url 'logout' %}">{% trans 'Logout'%}</a></li>
+                                    </ul>
+                                </li>
+                                {% endif %}
+                            </ul>
+
+                        </div>
+                        <!-- Nav End -->
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

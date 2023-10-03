@@ -1,0 +1,439 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-01 22:29+0700\n"
+"PO-Revision-Date: 2023-10-01 22:28+0000\n"
+"Last-Translator:   <admin@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Translated-Using: django-rosetta 0.9.9\n"
+
+#: .\about\models.py:8 .\newsApp\models.py:13 .\newsApp\models.py:44
+msgid "name"
+msgstr "Tên"
+
+#: .\about\models.py:14 .\newsApp\models.py:26
+msgid "content"
+msgstr "Nội dung"
+
+#: .\django_news\settings.py:126
+msgid "English"
+msgstr "en"
+
+#: .\django_news\settings.py:127
+msgid "Vietnamese"
+msgstr "vi"
+
+#: .\newsApp\forms.py:9
+msgid "The Username field is required."
+msgstr "Trường Tên người dùng là bắt buộc."
+
+#: .\newsApp\forms.py:10
+msgid "The Email field is required."
+msgstr "Trường Email dùng là bắt buộc."
+
+#: .\newsApp\forms.py:11
+msgid "The First Name field is required."
+msgstr "Trường Tên là bắt buộc."
+
+#: .\newsApp\forms.py:12
+msgid "The Last Name field is required."
+msgstr "Trường Họ là bắt buộc."
+
+#: .\newsApp\forms.py:76
+msgid "Selected User is invalid"
+msgstr "Người dùng đã chọn không hợp lệ"
+
+#: .\newsApp\forms.py:95
+msgid "Post ID is invalid"
+msgstr "ID bài đăng không hợp lệ"
+
+#: .\newsApp\models.py:15 .\newsApp\models.py:28
+msgid "status"
+msgstr "Trạng thái"
+
+#: .\newsApp\models.py:15
+msgid "Active"
+msgstr "có hiệu lực"
+
+#: .\newsApp\models.py:15
+msgid "Inactive"
+msgstr "không có hiệu lực"
+
+#: .\newsApp\models.py:24 .\newsApp\models.py:58
+msgid "title"
+msgstr "Tiêu đề"
+
+#: .\newsApp\models.py:25
+msgid "short_description"
+msgstr "Mô tả"
+
+#: .\newsApp\models.py:28 .\newsApp\templates\manage_post.html:73
+#: .\newsApp\templates\manage_post.html:75
+msgid "Published"
+msgstr "công khai"
+
+#: .\newsApp\models.py:28 .\newsApp\templates\manage_post.html:78
+#: .\newsApp\templates\manage_post.html:80
+msgid "Unpublished"
+msgstr "không công khai"
+
+#: .\newsApp\models.py:29
+msgid "category"
+msgstr "Thể loại"
+
+#: .\newsApp\models.py:31
+msgid "banner_path"
+msgstr "Chủ đề"
+
+#: .\newsApp\models.py:45
+msgid "subject"
+msgstr "Chủ đề"
+
+#: .\newsApp\models.py:46
+msgid "message"
+msgstr "Nội dung tin nhắn"
+
+#: .\newsApp\models.py:48
+msgid "comment"
+msgstr "Bình luận"
+
+#: .\newsApp\templates\about.html:12
+#: .\newsApp\templates\layouts\top-navigation.html:36
+msgid "About"
+msgstr "Giới thiệu"
+
+#: .\newsApp\templates\about.html:21
+#: .\newsApp\templates\layouts\footer.html:78
+#: .\newsApp\templates\layouts\top-navigation.html:37 .\newsApp\views.py:224
+msgid "News"
+msgstr "Tin tức"
+
+#: .\newsApp\templates\about.html:48 .\newsApp\templates\home.html:207
+#: .\newsApp\templates\home.html:229
+msgid "Read more"
+msgstr "Xem thêm"
+
+#: .\newsApp\templates\about.html:53
+msgid "Partners"
+msgstr "Đối tác"
+
+#: .\newsApp\templates\category.html:5
+msgid "Posts"
+msgstr "Bài đăng"
+
+#: .\newsApp\templates\category.html:30 .\newsApp\templates\home.html:21
+#: .\newsApp\templates\home.html:40 .\newsApp\templates\home.html:128
+#: .\newsApp\templates\home.html:255 .\newsApp\templates\posts.html:29
+#: .\newsApp\templates\posts.html:70 .\newsApp\templates\single_post.html:28
+msgid "By"
+msgstr "Người đăng"
+
+#: .\newsApp\templates\category.html:51 .\newsApp\templates\category.html:65
+#: .\newsApp\templates\home.html:51
+msgid "Previous"
+msgstr "Trước"
+
+#: .\newsApp\templates\category.html:101 .\newsApp\templates\category.html:113
+#: .\newsApp\templates\home.html:55
+msgid "Next"
+msgstr "Sau"
+
+#: .\newsApp\templates\category.html:134 .\newsApp\templates\home.html:180
+#: .\newsApp\templates\posts.html:93 .\newsApp\templates\single_post.html:132
+msgid "Latest News"
+msgstr "Tin mới nhất"
+
+#: .\newsApp\templates\home.html:62 .\newsApp\templates\layouts\footer.html:75
+msgid "About us"
+msgstr "Giới thiệu"
+
+#: .\newsApp\templates\home.html:82
+msgid "All the news"
+msgstr "Tất cả"
+
+#: .\newsApp\templates\home.html:88
+msgid "See all"
+msgstr "Xem thêm"
+
+#: .\newsApp\templates\layouts\footer.html:19
+msgid ""
+"Generate Lorem Ipsum placeholder text for use in your graphic, print and web "
+"layouts, and discover plugins for your favorite writing, design and blogging "
+"tools."
+msgstr ""
+"Tạo văn bản giữ chỗ Lorem Ipsum để sử dụng trong bố cục đồ họa, in ấn và web "
+"của bạn, đồng thời khám phá các plugin cho các công cụ viết, thiết kế và "
+"viết blog yêu thích của bạn."
+
+#: .\newsApp\templates\layouts\footer.html:69
+msgid "Explore"
+msgstr "Khám phá"
+
+#: .\newsApp\templates\layouts\footer.html:72
+#: .\newsApp\templates\layouts\top-navigation.html:35 .\newsApp\views.py:41
+msgid "Home"
+msgstr "Trang chủ"
+
+#: .\newsApp\templates\layouts\footer.html:83
+msgid "Company"
+msgstr "Tổ chức"
+
+#: .\newsApp\templates\layouts\footer.html:85
+msgid "Terms"
+msgstr "Điều khoản"
+
+#: .\newsApp\templates\layouts\footer.html:86
+msgid "Policy"
+msgstr "Chính sách"
+
+#: .\newsApp\templates\layouts\footer.html:88
+msgid "Contact Us"
+msgstr "Liên hệ"
+
+#: .\newsApp\templates\layouts\top-navigation.html:32
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: .\newsApp\templates\layouts\top-navigation.html:54
+#: .\newsApp\templates\login.html:29 .\newsApp\templates\login.html:50
+#: .\newsApp\templates\update_profile.html:43
+msgid "Login"
+msgstr "Đăng nhập"
+
+#: .\newsApp\templates\layouts\top-navigation.html:59 .\newsApp\views.py:130
+msgid "Profile"
+msgstr "Hồ sơ cá nhân"
+
+#: .\newsApp\templates\layouts\top-navigation.html:60 .\newsApp\views.py:142
+msgid "New Post"
+msgstr "Bài đăng mới"
+
+#: .\newsApp\templates\layouts\top-navigation.html:61
+msgid "All Posts"
+msgstr "Tất cả"
+
+#: .\newsApp\templates\layouts\top-navigation.html:62
+msgid "Logout"
+msgstr "Thoát"
+
+#: .\newsApp\templates\login.html:36 .\newsApp\templates\profile.html:18
+#: .\newsApp\templates\update_profile.html:24
+msgid "Username"
+msgstr "Tên đăng nhập"
+
+#: .\newsApp\templates\login.html:40
+msgid "Password"
+msgstr "mật khẩu"
+
+#: .\newsApp\templates\manage_post.html:26
+msgid "Update Post"
+msgstr "Cập nhật"
+
+#: .\newsApp\templates\manage_post.html:26
+msgid "Create New Post"
+msgstr "Đăng bài"
+
+#: .\newsApp\templates\manage_post.html:33
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: .\newsApp\templates\manage_post.html:37
+msgid "Category"
+msgstr "Thể loại"
+
+#: .\newsApp\templates\manage_post.html:52
+msgid "Short Description"
+msgstr "Mô tả"
+
+#: .\newsApp\templates\manage_post.html:56
+msgid "Content"
+msgstr "Nội dung"
+
+#: .\newsApp\templates\manage_post.html:60
+msgid "Banner Image"
+msgstr "Hình ảnh chủ đề"
+
+#: .\newsApp\templates\manage_post.html:62
+msgid "Choose file..."
+msgstr "Chọn tệp..."
+
+#: .\newsApp\templates\manage_post.html:70
+msgid "Status"
+msgstr "Trạng thái"
+
+#: .\newsApp\templates\manage_post.html:87
+msgid "Save"
+msgstr "Lưu"
+
+#: .\newsApp\templates\manage_post.html:111
+msgid "Please select category here"
+msgstr "Vui lòng chọn danh mục tại đây"
+
+#: .\newsApp\templates\manage_post.html:116
+msgid "Write your content here"
+msgstr "Viết nội dung của bạn ở đây"
+
+#: .\newsApp\templates\posts.html:5
+msgid "Result of"
+msgstr "Kết quả tìm kiếm của"
+
+#: .\newsApp\templates\posts.html:46
+msgid "All news"
+msgstr "Tất cả"
+
+#: .\newsApp\templates\profile.html:7
+msgid "My Profile"
+msgstr "Hồ sơ cá nhân"
+
+#: .\newsApp\templates\profile.html:14
+msgid "Fullname"
+msgstr "Tên đầy đủ"
+
+#: .\newsApp\templates\profile.html:27
+#: .\newsApp\templates\update_password.html:12 .\newsApp\views.py:111
+msgid "Update Password"
+msgstr "Cập nhật mật khẩu"
+
+#: .\newsApp\templates\profile.html:28 .\newsApp\views.py:90
+msgid "Update Profile"
+msgstr "Cập nhật hồ sơ"
+
+#: .\newsApp\templates\single_post.html:11
+msgid "No comment has been posted yet."
+msgstr "Không có bình luận nào"
+
+#: .\newsApp\templates\single_post.html:48 .\newsApp\views.py:138
+msgid "Edit Post"
+msgstr "Chỉnh sửa"
+
+#: .\newsApp\templates\single_post.html:49
+msgid "Delete Post"
+msgstr "Xóa"
+
+#: .\newsApp\templates\single_post.html:56
+msgid "Comments"
+msgstr "Tất cả bình luận"
+
+#: .\newsApp\templates\single_post.html:73
+msgid "Delete Comment"
+msgstr "Xóa"
+
+#: .\newsApp\templates\single_post.html:85
+msgid "Leave a Comment"
+msgstr "Để lại bình luận"
+
+#: .\newsApp\templates\single_post.html:105
+msgid "Subject"
+msgstr "Chủ đề"
+
+#: .\newsApp\templates\single_post.html:108
+msgid "Message"
+msgstr "Nội dung tin nhắn"
+
+#: .\newsApp\templates\single_post.html:111
+msgid "Submit Comment"
+msgstr "Gửi"
+
+#: .\newsApp\templates\update_password.html:25
+msgid "Update"
+msgstr "Cập nhật"
+
+#: .\newsApp\templates\update_profile.html:7
+msgid "Update Account Details"
+msgstr "Cập nhật thay đổi"
+
+#: .\newsApp\templates\update_profile.html:16
+msgid "First Name"
+msgstr "Tên"
+
+#: .\newsApp\templates\update_profile.html:20
+msgid "Last Name"
+msgstr "Họ"
+
+#: .\newsApp\templates\update_profile.html:32
+msgid "Enter Password"
+msgstr "Mật khẩu "
+
+#: .\newsApp\views.py:15
+msgid "Simple News Portal"
+msgstr "Cổng thông tin"
+
+#: .\newsApp\views.py:17
+msgid "News Portal"
+msgstr "Cổng thông tin tin tức"
+
+#: .\newsApp\views.py:26
+msgid " About page"
+msgstr "Giới thiệu"
+
+#: .\newsApp\views.py:76 .\newsApp\views.py:78
+msgid "Incorrect username or password"
+msgstr "Tên đăng nhập hoặc mật khẩu không chính xác"
+
+#: .\newsApp\views.py:100
+msgid "Profile has been updated"
+msgstr "Hồ sơ đã được cập nhật"
+
+#: .\newsApp\views.py:116
+msgid "Your Account Password has been updated successfully"
+msgstr "Mật khẩu tài khoản của bạn đã được cập nhật thành công"
+
+#: .\newsApp\views.py:165
+msgid "Post has been saved successfully."
+msgstr "Bài viết đã được lưu thành công."
+
+#: .\newsApp\views.py:174 .\newsApp\views.py:217
+msgid "Request has no data sent."
+msgstr "Yêu cầu không có dữ liệu được gửi."
+
+#: .\newsApp\views.py:208
+msgid "Comment has been saved successfully."
+msgstr "Không có bình luận nào"
+
+#: .\newsApp\views.py:238 .\newsApp\views.py:243
+msgid "File not Found"
+msgstr "Không tìm thấy tập tin"
+
+#: .\newsApp\views.py:272 .\newsApp\views.py:280
+msgid "Post ID is Invalid"
+msgstr "ID bài đăng không hợp lệ"
+
+#: .\newsApp\views.py:277
+msgid "Post has been deleted successfully."
+msgstr "Bài viết đã được xóa thành công."
+
+#: .\newsApp\views.py:289 .\newsApp\views.py:297
+msgid "Comment ID is Invalid"
+msgstr "ID bài đăng không hợp lệ"
+
+#: .\newsApp\views.py:294
+msgid "Comment has been deleted successfully."
+msgstr "Không có bình luận nào"
+
+#: .\newsApp\views.py:308
+msgid "Search for "
+msgstr "Tìm kiếm"
+
+#~ msgid "{category.name} Posts"
+#~ msgstr "`category.name` bài viết"
+
+#~ msgid "Language"
+#~ msgstr "Ngôn ngữ"
+
+#~ msgid "Feedbacks"
+#~ msgstr "Phản hồi"
+
+#~ msgid "meta_keywords"
+#~ msgstr "từ khóa nổi"

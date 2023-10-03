@@ -1,0 +1,7 @@
+Django==4.0.3
+Pillow
+django-ckeditor
+django-embed-video
+django-rosetta
+django_parler
+psycopg2
