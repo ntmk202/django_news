@@ -308,3 +308,10 @@ def search_new(request, pk = None):
         return render(request, 'posts.html', {'searched': searched, 'posts': posts, 'page_title': _('Search for ') + searched})
     else:
         return render(request, 'posts.html', {})
+    
+def news(request):
+    context = context_data()
+    context['page'] = 'all_post'
+    context['page_title'] = _('News')
+    context['latest'] = models.Post.objects.filter(status = 1).order_by('-date_created').all()[:10]
+    return render(request, 'posts.html', context)
