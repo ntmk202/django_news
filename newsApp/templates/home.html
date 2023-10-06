@@ -7,8 +7,8 @@
       
       {% for banner in banners %}
         <div class="carousel-item{% if forloop.first %} active{% endif %}">
-          <div style="height: 600px">
-            <img class="d-block w-100 h-100 bg-overlay" src="{{ banner.banner.url }}" alt="Slide">
+          <div class="h-75">
+            <img class="d-block w-100 h-75 bg-overlay img-fluid img-thumbnail" style="max-height: 600px" src="{{ banner.banner.url }}" alt="Slide">
           </div>
           <div class="carousel-caption d-none d-sm-block" style="background-image: linear-gradient(rgba(0, 0, 0,0), rgba(0, 0, 0,.2)); border-radius: 10px">
             <h1 class="text-white ms-5">{% trans 'Kick-off meeting in Mongolia' %}</h1>

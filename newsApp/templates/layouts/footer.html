@@ -5,7 +5,7 @@
     <div class="container pt-5">
       <div class="row justify-content-between">
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-          <div class="footers-logo ">
+          <div class="footers-logo my-2">
             <h6 class="text-uppercase"> {%trans 'Project condinated by'%} </h6>
               <img class="rounded mx-5 d-block"
               src="{% static 'img/core-img/city_university.png' %}"
@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 align-self-center">
-          <div class="owl-carousel">
+          <div class="owl-carousel my-5">
             {% for partner in about_partner %}
                 <div class="item">
                     <img class="d-block" style="height: 80px; width: auto;" src="{{ partner.logo.url }}" alt="Partner {{ forloop.counter }}" />
@@ -23,7 +23,7 @@
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-          <div class="footers-logo">
+          <div class="footers-logo my-2">
               <img 
                 class="rounded mx-auto d-block"
                 src="{% static 'img/core-img/thumbnail.jpg' %}"
