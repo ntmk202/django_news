@@ -2,14 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-06 17:14+0700\n"
-"PO-Revision-Date: 2023-10-01 22:28+0000\n"
+"PO-Revision-Date: 2023-10-06 17:22+0000\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -112,7 +112,7 @@ msgstr "Bình luận"
 
 #: .\newsApp\models.py:72
 msgid "postUrl"
-msgstr ""
+msgstr "Url bài viết"
 
 #: .\newsApp\templates\about.html:12
 #: .\newsApp\templates\layouts\top-navigation.html:36
@@ -165,11 +165,11 @@ msgstr "Tin mới nhất"
 
 #: .\newsApp\templates\home.html:14
 msgid "Kick-off meeting in Mongolia"
-msgstr ""
+msgstr "Họp khởi động dự án tại Mông Cổ"
 
 #: .\newsApp\templates\home.html:32
 msgid "Welcome to the Digital Move project"
-msgstr ""
+msgstr "Chào mừng đến với dự án Digital Move"
 
 #: .\newsApp\templates\home.html:52
 msgid "All the news"
@@ -181,14 +181,17 @@ msgstr "Xem thêm"
 
 #: .\newsApp\templates\layouts\footer.html:9
 msgid "Project condinated by"
-msgstr ""
+msgstr "Dự án được quản lý bởi"
 
 #: .\newsApp\templates\layouts\footer.html:34
 msgid ""
 "Co-funded by the Erasmus+ Programme of the European Union. DIGITAL MOVE is "
-"co-financed by the European Commission through the Erasmus+ Programme, under "
-"project number 101082527."
+"co-financed by the European Commission through the Erasmus+ Programme, under"
+" project number 101082527."
 msgstr ""
+"Được đồng tài trợ bởi Chương trình Erasmus+ của Liên minh Châu Âu. DIGITAL "
+"MOVE được Ủy ban Châu Âu đồng tài trợ thông qua Chương trình Erasmus+, theo "
+"số dự án 101082527."
 
 #: .\newsApp\templates\layouts\top-navigation.html:32
 msgid "Search"
@@ -200,12 +203,12 @@ msgstr "Trang chủ"
 
 #: .\newsApp\templates\layouts\top-navigation.html:39
 msgid "Resources"
-msgstr ""
+msgstr "Tài nguyên"
 
 #: .\newsApp\templates\layouts\top-navigation.html:40
 #: .\newsApp\templates\medias.html:12 .\newsApp\views.py:339
 msgid "Media"
-msgstr ""
+msgstr "Truyền thông"
 
 #: .\newsApp\templates\layouts\top-navigation.html:58
 #: .\newsApp\templates\login.html:29 .\newsApp\templates\login.html:50
@@ -222,7 +225,6 @@ msgid "New Post"
 msgstr "Bài đăng mới"
 
 #: .\newsApp\templates\layouts\top-navigation.html:67
-#, fuzzy
 #| msgid "All Posts"
 msgid "All Post"
 msgstr "Tất cả"
@@ -290,7 +292,7 @@ msgstr "Viết nội dung của bạn ở đây"
 
 #: .\newsApp\templates\medias.html:26
 msgid "No media resources available."
-msgstr ""
+msgstr "Không có tài nguyên truyền thông có sẵn."
 
 #: .\newsApp\templates\posts.html:5
 msgid "Result of"
@@ -319,7 +321,7 @@ msgstr "Cập nhật hồ sơ"
 
 #: .\newsApp\templates\resources.html:12 .\newsApp\views.py:330
 msgid "Resource"
-msgstr ""
+msgstr "Tài nguyên"
 
 #: .\newsApp\templates\single_post.html:11
 msgid "No comment has been posted yet."
@@ -414,19 +416,18 @@ msgid "Search for "
 msgstr "Tìm kiếm"
 
 #: .\newsApp\views.py:322
-#, fuzzy
 #| msgid "Partners"
 msgid "Partner"
 msgstr "Đối tác"
 
 #~ msgid ""
-#~ "Generate Lorem Ipsum placeholder text for use in your graphic, print and "
-#~ "web layouts, and discover plugins for your favorite writing, design and "
+#~ "Generate Lorem Ipsum placeholder text for use in your graphic, print and web"
+#~ " layouts, and discover plugins for your favorite writing, design and "
 #~ "blogging tools."
 #~ msgstr ""
-#~ "Tạo văn bản giữ chỗ Lorem Ipsum để sử dụng trong bố cục đồ họa, in ấn và "
-#~ "web của bạn, đồng thời khám phá các plugin cho các công cụ viết, thiết kế "
-#~ "và viết blog yêu thích của bạn."
+#~ "Tạo văn bản giữ chỗ Lorem Ipsum để sử dụng trong bố cục đồ họa, in ấn và web"
+#~ " của bạn, đồng thời khám phá các plugin cho các công cụ viết, thiết kế và "
+#~ "viết blog yêu thích của bạn."
 
 #~ msgid "Explore"
 #~ msgstr "Khám phá"

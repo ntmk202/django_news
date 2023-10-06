@@ -2,14 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-06 17:14+0700\n"
-"PO-Revision-Date: 2023-10-01 22:28+0000\n"
+"PO-Revision-Date: 2023-10-06 17:21+0000\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -112,7 +112,7 @@ msgstr "Comment"
 
 #: .\newsApp\models.py:72
 msgid "postUrl"
-msgstr ""
+msgstr "Post Url"
 
 #: .\newsApp\templates\about.html:12
 #: .\newsApp\templates\layouts\top-navigation.html:36
@@ -165,11 +165,11 @@ msgstr "Latest News"
 
 #: .\newsApp\templates\home.html:14
 msgid "Kick-off meeting in Mongolia"
-msgstr ""
+msgstr "Kick-off meeting in Mongolia"
 
 #: .\newsApp\templates\home.html:32
 msgid "Welcome to the Digital Move project"
-msgstr ""
+msgstr "Welcome to the Digital Move project"
 
 #: .\newsApp\templates\home.html:52
 msgid "All the news"
@@ -181,14 +181,17 @@ msgstr "See all"
 
 #: .\newsApp\templates\layouts\footer.html:9
 msgid "Project condinated by"
-msgstr ""
+msgstr "Project coordinated by"
 
 #: .\newsApp\templates\layouts\footer.html:34
 msgid ""
 "Co-funded by the Erasmus+ Programme of the European Union. DIGITAL MOVE is "
-"co-financed by the European Commission through the Erasmus+ Programme, under "
-"project number 101082527."
+"co-financed by the European Commission through the Erasmus+ Programme, under"
+" project number 101082527."
 msgstr ""
+"Co-funded by the Erasmus+ Programme of the European Union. DIGITAL MOVE is "
+"co-financed by the European Commission through the Erasmus+ Programme, under"
+" project number 101082527."
 
 #: .\newsApp\templates\layouts\top-navigation.html:32
 msgid "Search"
@@ -200,12 +203,12 @@ msgstr "Home"
 
 #: .\newsApp\templates\layouts\top-navigation.html:39
 msgid "Resources"
-msgstr ""
+msgstr "Resources"
 
 #: .\newsApp\templates\layouts\top-navigation.html:40
 #: .\newsApp\templates\medias.html:12 .\newsApp\views.py:339
 msgid "Media"
-msgstr ""
+msgstr "Media"
 
 #: .\newsApp\templates\layouts\top-navigation.html:58
 #: .\newsApp\templates\login.html:29 .\newsApp\templates\login.html:50
@@ -222,7 +225,6 @@ msgid "New Post"
 msgstr "New Post"
 
 #: .\newsApp\templates\layouts\top-navigation.html:67
-#, fuzzy
 #| msgid "All Posts"
 msgid "All Post"
 msgstr "All Posts"
@@ -290,7 +292,7 @@ msgstr "Write your content here"
 
 #: .\newsApp\templates\medias.html:26
 msgid "No media resources available."
-msgstr ""
+msgstr "No media resources available."
 
 #: .\newsApp\templates\posts.html:5
 msgid "Result of"
@@ -319,7 +321,7 @@ msgstr "Update Profile"
 
 #: .\newsApp\templates\resources.html:12 .\newsApp\views.py:330
 msgid "Resource"
-msgstr ""
+msgstr "Resource"
 
 #: .\newsApp\templates\single_post.html:11
 msgid "No comment has been posted yet."
@@ -414,18 +416,17 @@ msgid "Search for "
 msgstr "Search"
 
 #: .\newsApp\views.py:322
-#, fuzzy
 #| msgid "Partners"
 msgid "Partner"
 msgstr "Partners"
 
 #~ msgid ""
-#~ "Generate Lorem Ipsum placeholder text for use in your graphic, print and "
-#~ "web layouts, and discover plugins for your favorite writing, design and "
+#~ "Generate Lorem Ipsum placeholder text for use in your graphic, print and web"
+#~ " layouts, and discover plugins for your favorite writing, design and "
 #~ "blogging tools."
 #~ msgstr ""
-#~ "Generate Lorem Ipsum placeholder text for use in your graphic, print and "
-#~ "web layouts, and discover plugins for your favorite writing, design and "
+#~ "Generate Lorem Ipsum placeholder text for use in your graphic, print and web"
+#~ " layouts, and discover plugins for your favorite writing, design and "
 #~ "blogging tools."
 
 #~ msgid "Explore"
