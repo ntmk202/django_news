@@ -7,7 +7,7 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 import json
 from newsApp import models, forms
-from about.models import Partner, AboutContent
+from about.models import Partner, AboutContent, Resource
 from django.utils.translation import gettext_lazy as _
 
 def context_data():
@@ -40,6 +40,7 @@ def home(request):
     context['page'] = 'home'
     context['page_title'] = _('Home')
     context['videos'] = videos
+    context['about_partner'] =  Partner.objects.all()
     context['latest_top'] = posts[:2]
     context['latest_bottom'] = posts[2:12]
     list_category = []
@@ -127,6 +128,7 @@ def update_password(request):
 def profile(request):
     context = context_data()
     context['page'] = 'profile'
+    context['about_partner'] =  Partner.objects.all()
     context['page_title'] = _("Profile")
     return render(request,'profile.html', context)
 
@@ -136,10 +138,12 @@ def manage_post(request, pk = None):
     if not pk is None:
         context['page']='edit_post'
         context['page_title']=_('Edit Post')
+        context['about_partner'] =  Partner.objects.all()
         context['post']=models.Post.objects.get(id=pk)
     else:
         context['page']='new_post'
         context['page_title']=_('New Post')
+        context['about_partner'] =  Partner.objects.all()
         context['post']={}
 
     return render(request, 'manage_post.html',context)
@@ -180,6 +184,7 @@ def view_post(request, pk=None):
     post = models.Post.objects.get(id = pk)
     context['page'] = 'post'
     context['page_title'] = post.title
+    context['about_partner'] =  Partner.objects.all()
     context['post'] = post
     context['latest'] = models.Post.objects.exclude(id=pk).filter(status = 1).order_by('-date_created').all()[:10]
     context['comments'] = models.Comment.objects.filter(post=post).all()
@@ -222,6 +227,7 @@ def list_posts(request):
     context = context_data()
     context['page'] = 'all_post'
     context['page_title'] = _('News')
+    context['about_partner'] =  Partner.objects.all()
     if request.user.is_superuser:
         context['posts'] = models.Post.objects.order_by('-date_created').all()
     else:
@@ -260,6 +266,7 @@ def category_posts(request,pk=None):
     context['page'] = 'category_post'
     context['page_title'] = f'{category.name} Posts'
     context['posts'] = posts
+    context['about_partner'] =  Partner.objects.all()
         
     context['latest'] = models.Post.objects.filter(status = 1).order_by('-date_created').all()[:10]
     
@@ -309,9 +316,31 @@ def search_new(request, pk = None):
     else:
         return render(request, 'posts.html', {})
     
-def news(request):
+def partner(request):
     context = context_data()
-    context['page'] = 'all_post'
-    context['page_title'] = _('News')
-    context['latest'] = models.Post.objects.filter(status = 1).order_by('-date_created').all()[:10]
-    return render(request, 'posts.html', context)
+    context['page'] = 'partner'
+    context['page_title'] = _('Partner')
+    context['about_partner'] =  Partner.objects.all()
+    context['latest_top'] = models.Post.objects.filter(status = 1).order_by('-date_created').all()[:2]
+    return render(request, 'partners.html', context)
+
+def resource(request):
+    context = context_data()
+    context['page'] = 'resource'
+    context['page_title'] = _('Resource')
+    context['about_partner'] =  Partner.objects.all()
+    context['resources'] =  Resource.objects.all()
+    context['latest_top'] = models.Post.objects.filter(status = 1).order_by('-date_created').all()[:2]
+    return render(request, 'resources.html', context)
+
+def media(request):
+    context = context_data()
+    context['page'] = 'media'
+    context['page_title'] = _('Media')
+    context['about_partner'] =  Partner.objects.all()
+    context['media'] =  models.MediaPg.objects.all()
+    context['latest_top'] = models.Post.objects.filter(status = 1).order_by('-date_created').all()[:2]
+    return render(request, 'medias.html', context)
+
+
+    

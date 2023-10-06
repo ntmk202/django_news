@@ -1,4 +1,4 @@
-{% extends 'layouts/base.html' %} {% load i18n %} {% load static %} {% block content %}
+{% extends 'layouts/base.html' %} {% load i18n %} {% load static %} {% block content %} {% load embed_video_tags %}
 
 <!-- ##### Intro News Area Start ##### -->
 <section class="intro-news-area">
@@ -9,10 +9,22 @@
         <div class="col-12 col-lg-8">
           <div class="intro-news-tab">
             <!-- Intro News Filter -->
-            <h4 class="mb-30">{% trans 'About'%}</h4>
-            <p style="margin-bottom: 0px; text-align: justify">
-              {{about_content.content|safe}}
-            </p>
+            <h4 class="mb-30">{% trans 'Media'%}</h4>
+            {% if media %}
+                {% for video_resource in media %}
+                <div class="card">
+                    <div class="card-body">
+                      <p class="card-text"><a href="{{ video_resource.postUrl }}">{{ video_resource.title }}</a></p>
+                      <p class="card-text"><small class="text-muted">Last updated {{video_resource.date_created|timesince}} ago</small></p>
+                    </div>
+                    <div class="row justify-content-center">
+                        {% video video_resource.url '700x300' %}
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p>{% trans 'No media resources available.'%}</p>
+            {% endif %}
           </div>
         </div>
         <!-- Sidebar Widget -->
@@ -50,15 +62,6 @@
               </div>
             </div>
             {% endfor %}
-            <h4 class="mb-30">{% trans 'Partners'%}</h4>
-            <div class="owl-carousel">
-              {% for partner in about_partner %}
-                  <div class="item">
-                      <img class="d-block" style="height: 80px; width: auto;" src="{{ partner.logo.url }}" alt="Partner {{ forloop.counter }}" />
-                  </div>
-              {% endfor %}
-            </div>
-            
             
           </div>
         </div>
@@ -67,4 +70,5 @@
   </div>
 </section>
 <!-- ##### Intro News Area End ##### -->
+
 {% endblock content %}

@@ -9,10 +9,15 @@
         <div class="col-12 col-lg-8">
           <div class="intro-news-tab">
             <!-- Intro News Filter -->
-            <h4 class="mb-30">{% trans 'About'%}</h4>
-            <p style="margin-bottom: 0px; text-align: justify">
-              {{about_content.content|safe}}
-            </p>
+            <h4 class="mb-30">{% trans 'Partners'%}</h4>
+            <div class="owl-carousel owl-theme my-5">
+                {% for partner in about_partner %}
+                    <div class="item">
+                        <img class="d-block" style="height: 200px; width: auto;" src="{{ partner.logo.url }}" alt="Partner {{ forloop.counter }}" />
+                        <p class="mx-auto text-center mt-3">{{partner.name}}</p>
+                    </div>
+                {% endfor %}
+              </div>
           </div>
         </div>
         <!-- Sidebar Widget -->
@@ -50,15 +55,6 @@
               </div>
             </div>
             {% endfor %}
-            <h4 class="mb-30">{% trans 'Partners'%}</h4>
-            <div class="owl-carousel">
-              {% for partner in about_partner %}
-                  <div class="item">
-                      <img class="d-block" style="height: 80px; width: auto;" src="{{ partner.logo.url }}" alt="Partner {{ forloop.counter }}" />
-                  </div>
-              {% endfor %}
-            </div>
-            
             
           </div>
         </div>
@@ -67,4 +63,20 @@
   </div>
 </section>
 <!-- ##### Intro News Area End ##### -->
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+          items: 3,
+          loop: true,
+          margin: 15,
+          dots:true
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true
+      });
+    });
+  </script>
+
 {% endblock content %}

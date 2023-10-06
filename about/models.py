@@ -13,3 +13,16 @@ class AboutContent(TranslatableModel):
     translations = TranslatedFields(
         content = RichTextField(_('content'))
     )
+
+class Resource(TranslatableModel):
+    translations = TranslatedFields(
+        title = models.TextField(_('title'))
+    )
+    image = models.ImageField(upload_to='images/')
+    file = models.FileField(upload_to='files/')
+
+    def get_absolute_url(self):
+        return self.file.url
+
+    def __str__(self):
+        return self.title 

@@ -63,4 +63,15 @@ class Video(TranslatableModel):
 
     def __st__(self):
         return str(self.title)
-    
+
+class MediaPg(TranslatableModel):
+    translations = TranslatedFields(
+        title = models.TextField(_('title'))
+    )
+    url = EmbedVideoField()
+    postUrl = models.URLField(_('postUrl'))
+    date_created = models.DateTimeField(default=timezone.now)
+    date_updated = models.DateTimeField(auto_now = True)
+
+    def __st__(self):
+        return str(self.title)

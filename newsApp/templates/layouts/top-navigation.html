@@ -8,7 +8,7 @@
                 <nav class="classy-navbar justify-content-between" id="newsboxNav" style="height: 80px;">
 
                     <!-- Nav brand -->
-                    <a href="{%url 'home-page'%}" class="nav-brand"><img src="{% static 'img/core-img/logo.png' %}" alt=""></a>
+                    <a href="{%url 'home-page'%}" class="nav-brand"><img src="{% static 'img/core-img/logo_digitalmove.png' %}" alt=""></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -35,9 +35,12 @@
                                 <li><a href="{%url 'home-page'%}">{% trans 'Home'%}</a></li>
                                 <li><a href="{%url 'about-page'%}">{% trans 'About'%}</a></li>
                                 <li><a href="{%url 'news'%}">{% trans 'News'%}</a></li>
-                                {% for category in categories %}
+                                <li><a href="{%url 'partners'%}">{% trans 'Partners'%}</a></li>
+                                <li><a href="{%url 'resources'%}">{% trans 'Resources'%}</a></li>
+                                <li><a href="{%url 'media'%}">{% trans 'Media'%}</a></li>
+                                {% comment %} {% for category in categories %}
                                 <li><a href="{% url 'category-post' category.id %}">{{category}}</a></li>
-                                {% endfor %}
+                                {% endfor %} {% endcomment %}
                                 <li>
                                     {% get_current_language as CURRENT_LANGUAGE %}
                                     {% get_available_languages as AVAILABLE_LANGUAGES %}
@@ -53,14 +56,17 @@
                                 {% if not user.id %}
                                 <li><a href="{% url 'login-page' %}">{% trans 'Login'%}</a></li>
                                 {% else %}
-                                <li>
-                                    <a href="#">{{user.username}}</a>
-                                    <ul class="dropdown">
-                                        <li><a href="{% url 'profile-page' %}">{% trans 'Profile'%}</a></li>
-                                        <li><a href="{% url 'new-post' %}">{% trans 'New Post'%}</a></li>
-                                        <li><a href="{% url 'all-posts' %}">{% trans 'All Posts'%}</a></li>
-                                        <li><a href="{% url 'logout' %}">{% trans 'Logout'%}</a></li>
-                                    </ul>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        {{user.username}}
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="{% url 'profile-page' %}">{% trans 'Profile'%}</a>
+                                      <a class="dropdown-item" href="{% url 'new-post' %}">{% trans 'New Post'%}</a>
+                                      <a class="dropdown-item" href="{% url 'all-posts' %}">{% trans 'All Post'%}</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="{% url 'logout' %}">{% trans 'Logout'%}</a>
+                                    </div>
                                 </li>
                                 {% endif %}
                             </ul>

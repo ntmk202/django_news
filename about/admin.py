@@ -7,3 +7,4 @@ from parler.admin import TranslatableAdmin
 
 admin.site.register(models.Partner, TranslatableAdmin)
 admin.site.register(models.AboutContent, TranslatableAdmin)
+admin.site.register(models.Resource, TranslatableAdmin)

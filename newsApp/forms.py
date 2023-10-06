@@ -76,7 +76,7 @@ class savePost(forms.ModelForm):
             raise forms.ValidationError(_('Selected User is invalid'))
 
 
-class saveComment(forms.ModelForm):
+# class saveComment(forms.ModelForm):
     post = forms.CharField(max_length=30,label="Post")
     name = forms.CharField(max_length=250,label="Name")
     email = forms.CharField(max_length=250,label="Email")

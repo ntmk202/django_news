@@ -51,7 +51,7 @@
                 {% endif %}
                 <div class="post-details-content mb-100">{{post.content|safe}}</div>
 
-                <!-- Comment Area Start -->
+                {% comment %} <!-- Comment Area Start -->
                 <div class="comment_area clearfix mb-50">
                     <h4 class="mb-50">{% trans 'Comments' %}</h4>
 
@@ -113,19 +113,18 @@
                             </div>
                         </form>
                     </div>
-                </div>
-            </div>
+                </div> {% endcomment %}
+            </div> 
 
             <!-- Sidebar Widget -->
             <div class="col-12 col-sm-9 col-md-6 col-lg-4">
                 <div class="sidebar-area">
-
                     <!-- Add Widget -->
-                    <div class="single-widget-area add-widget mb-30">
+                    {% comment %} <div class="single-widget-area add-widget mb-30">
                         <a href="#">
                             <img src="{% static 'img/bg-img/add3.png' %}" alt="">
                         </a>
-                    </div>
+                    </div> {% endcomment %}
 
                     <!-- Latest News Widget -->
                     <div class="single-widget-area news-widget mb-30">
