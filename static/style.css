@@ -364,7 +364,7 @@ img {
         padding: 0 10px;
         color: #404040; }
         .header-area .newsbox-main-menu .classy-navbar .classynav ul li a:hover, .header-area .newsbox-main-menu .classy-navbar .classynav ul li a:focus {
-          color: #ef1b48; }
+          color: #eab106; }
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
           .header-area .newsbox-main-menu .classy-navbar .classynav ul li a {
             font-size: 13px;
@@ -661,7 +661,7 @@ img {
       margin-bottom: 10px;
       color: #232323; }
       .single-blog-post.style-2 .blog-content .post-title:hover, .single-blog-post.style-2 .blog-content .post-title:focus {
-        color: #ef1b48; }
+        color: #eab106; }
     .single-blog-post.style-2 .blog-content .post-author {
       display: block;
       font-size: 12px;
@@ -764,9 +764,9 @@ img {
       transition-duration: 500ms; }
       .single-blog-post.style-4 .blog-content .post-title:hover, .single-blog-post.style-4 .blog-content .post-title:focus {
         font-weight: 600;
-        color: #ef1b48; }
+        color: #eab106; }
   .single-blog-post.style-4:hover .blog-content .post-title {
-    color: #ef1b48; }
+    color: #eab106; }
   .single-blog-post.style-5 .blog-thumbnail {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 45%;
@@ -819,7 +819,7 @@ img {
           font-size: 18px; } }
       .single-blog-post.style-5 .blog-content .post-title:hover, .single-blog-post.style-5 .blog-content .post-title:focus {
         font-weight: 600;
-        color: #ef1b48; }
+        color: #eab106; }
     .single-blog-post.style-5 .blog-content .post-author {
       font-size: 12px;
       color: #636363;
@@ -828,7 +828,7 @@ img {
       transition-duration: 500ms;
       display: block; }
   .single-blog-post.style-5:hover .blog-content .post-title {
-    color: #ef1b48; }
+    color: #eab106; }
   .single-blog-post.style-6 .blog-thumbnail {
     margin-bottom: 20px;
     position: relative;
@@ -947,7 +947,7 @@ img {
       line-height: 32px;
       background-color: transparent; }
       .intro-news-filter .nav-tabs .nav-link.active {
-        color: #ef1b48; }
+        color: #eab106; }
       @media only screen and (min-width: 480px) and (max-width: 767px) {
         .intro-news-filter .nav-tabs .nav-link {
           padding: 0 8px; } }
