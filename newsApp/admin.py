@@ -5,7 +5,6 @@ from parler.admin import TranslatableAdmin
 
 admin.site.register(models.Category, TranslatableAdmin)
 admin.site.register(models.Post, TranslatableAdmin)
-admin.site.register(models.Comment, TranslatableAdmin)
 admin.site.register(models.Banner)
 admin.site.register(models.Video, TranslatableAdmin)
 admin.site.register(models.MediaPg, TranslatableAdmin)
