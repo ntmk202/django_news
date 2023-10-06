@@ -37,7 +37,6 @@ class Post(TranslatableModel):
 
 class Banner(models.Model):
     banner = models.ImageField(upload_to="banner_home")
-    post = models.ForeignKey(Post, on_delete=models.DO_NOTHING,default="")
 
 class Comment(TranslatableModel):
     translations = TranslatedFields(

@@ -12,7 +12,7 @@ from django.utils.translation import gettext_lazy as _
 
 def context_data():
     context = {
-        'site_name': _('Simple News Portal'),
+        'site_name': 'Digitalmove',
         'page' : 'home',
         'page_title' : _('News Portal'),
         'categories' : models.Category.objects.filter(status = 1).all(),

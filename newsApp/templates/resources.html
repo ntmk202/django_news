@@ -10,6 +10,7 @@
           <div class="intro-news-tab">
             <!-- Intro News Filter -->
             <h4 class="mb-30">{% trans 'Resource'%}</h4>
+            {% if resources %}
             {% for resource in resources %}
             <div class="media">
                 <img class="align-self-center mr-3" style="height: 100px; width: 100px" src="{{ resource.image.url }}" alt="{{ resource.title }}">
@@ -18,6 +19,9 @@
                 </div>
             </div>                
             {% endfor %}
+            {% else %}
+                <p>{% trans 'No media resources available.'%}</p>
+            {% endif %}
           </div>
         </div>
         <!-- Sidebar Widget -->
