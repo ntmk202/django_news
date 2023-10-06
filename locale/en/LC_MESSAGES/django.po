@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-06 08:19+0700\n"
+"POT-Creation-Date: 2023-10-06 17:14+0700\n"
 "PO-Revision-Date: 2023-10-01 22:28+0000\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,25 +40,29 @@ msgstr "en"
 msgid "Vietnamese"
 msgstr "vi"
 
-#: .\newsApp\forms.py:10
+#: .\newsApp\forms.py:9
 msgid "The Username field is required."
 msgstr "The Username field is required."
 
-#: .\newsApp\forms.py:11
+#: .\newsApp\forms.py:10
 msgid "The Email field is required."
 msgstr "The Email field is required."
 
-#: .\newsApp\forms.py:12
+#: .\newsApp\forms.py:11
 msgid "The First Name field is required."
 msgstr "The  First Name field is required."
 
-#: .\newsApp\forms.py:13
+#: .\newsApp\forms.py:12
 msgid "The Last Name field is required."
 msgstr "The  Last Name field is required."
 
 #: .\newsApp\forms.py:76
 msgid "Selected User is invalid"
 msgstr "Selected User is invalid"
+
+#: .\newsApp\forms.py:95
+msgid "Post ID is invalid"
+msgstr "Post ID is invalid"
 
 #: .\newsApp\models.py:15 .\newsApp\models.py:28
 msgid "status"
@@ -414,9 +418,6 @@ msgstr "Search"
 #| msgid "Partners"
 msgid "Partner"
 msgstr "Partners"
-
-#~ msgid "Post ID is invalid"
-#~ msgstr "Post ID is invalid"
 
 #~ msgid ""
 #~ "Generate Lorem Ipsum placeholder text for use in your graphic, print and "

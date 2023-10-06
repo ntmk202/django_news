@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-06 08:19+0700\n"
+"POT-Creation-Date: 2023-10-06 17:14+0700\n"
 "PO-Revision-Date: 2023-10-01 22:28+0000\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,25 +40,29 @@ msgstr "en"
 msgid "Vietnamese"
 msgstr "vi"
 
-#: .\newsApp\forms.py:10
+#: .\newsApp\forms.py:9
 msgid "The Username field is required."
 msgstr "Trường Tên người dùng là bắt buộc."
 
-#: .\newsApp\forms.py:11
+#: .\newsApp\forms.py:10
 msgid "The Email field is required."
 msgstr "Trường Email dùng là bắt buộc."
 
-#: .\newsApp\forms.py:12
+#: .\newsApp\forms.py:11
 msgid "The First Name field is required."
 msgstr "Trường Tên là bắt buộc."
 
-#: .\newsApp\forms.py:13
+#: .\newsApp\forms.py:12
 msgid "The Last Name field is required."
 msgstr "Trường Họ là bắt buộc."
 
 #: .\newsApp\forms.py:76
 msgid "Selected User is invalid"
 msgstr "Người dùng đã chọn không hợp lệ"
+
+#: .\newsApp\forms.py:95
+msgid "Post ID is invalid"
+msgstr "ID bài đăng không hợp lệ"
 
 #: .\newsApp\models.py:15 .\newsApp\models.py:28
 msgid "status"
@@ -414,9 +418,6 @@ msgstr "Tìm kiếm"
 #| msgid "Partners"
 msgid "Partner"
 msgstr "Đối tác"
-
-#~ msgid "Post ID is invalid"
-#~ msgstr "ID bài đăng không hợp lệ"
 
 #~ msgid ""
 #~ "Generate Lorem Ipsum placeholder text for use in your graphic, print and "
