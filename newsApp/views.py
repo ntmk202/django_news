@@ -23,7 +23,8 @@ def context_data():
 def about_context_data():
     posts = models.Post.objects.filter(status = 1).order_by('-date_created').all()
     context = {
-        'site_name': _(' About page'),
+        'site_name': 'Digitalmove',
+        'page_title': _(' About page'),
         'about_content': AboutContent.objects.first(),
         'about_partner': Partner.objects.all(),
         'latest_top': posts[:2]
@@ -226,7 +227,7 @@ def save_comment(request):
 def list_posts(request):
     context = context_data()
     context['page'] = 'all_post'
-    context['page_title'] = _('News')
+    context['page_title'] = _('All Post')
     context['about_partner'] =  Partner.objects.all()
     if request.user.is_superuser:
         context['posts'] = models.Post.objects.order_by('-date_created').all()
@@ -305,17 +306,31 @@ def delete_comment(request, pk = None):
     
     return HttpResponse(json.dumps(resp), content_type="application/json")
 
-def search_new(request, pk = None):
+def search_new(request):
+    context = context_data()
+    context['page'] = 'search'
+    context['about_partner'] =  Partner.objects.all()
 
     if request.method == "POST":
         searched = request.POST['searched']
-        posts = models.Post.objects.filter(translations__title__icontains=searched)
+        search_posts = models.Post.objects.filter(translations__title__icontains=searched)
+        context['page_title'] = _('Search for ') + ' ' + searched
+        context['searched'] = searched
+        context['search_posts'] = search_posts
 
-
-        return render(request, 'posts.html', {'searched': searched, 'posts': posts, 'page_title': _('Search for ') + searched})
+        return render(request, 'news.html', context)
     else:
-        return render(request, 'posts.html', {})
+        return render(request, 'news.html', {})
     
+def new(request):
+    context = context_data()
+    context['page'] = 'new'
+    context['page_title'] = _('News')
+    context['about_partner'] =  Partner.objects.all()
+    context['posts'] = models.Post.objects.filter(status = 1).order_by('-date_created').all()
+    context['latest_top'] = models.Post.objects.filter(status = 1).order_by('-date_created').all()[:3]
+    return render(request, 'news.html', context)
+
 def partner(request):
     context = context_data()
     context['page'] = 'partner'

@@ -1,7 +1,7 @@
 {% extends 'layouts/base.html' %}{% load i18n %}{% load static %} {% block content %}
 <div class="news-area section-padding-100-70">
   <div class="container">
-    {% comment %} {% if searched %}
+    {% if searched %}
       <h3class="text-center"><b>{% trans 'Result of'%} {{searched}}</b></h3class=>
 
       <center>
@@ -10,24 +10,24 @@
       <div class="row mt-5">
         <div class="col-12 col-md-8 col-lg-9">
           <div id="post-list">
-            {% for post in posts %}
+            {% for s_post in search_posts %}
             <!-- Single News Area -->
             <div class="single-blog-post d-flex flex-wrap style-5 mb-30">
               <!-- Blog Thumbnail -->
               <div class="blog-thumbnail">
-                <a href="{% url 'view-post' post.pk %}"
-                  ><img src="{{post.banner_path.url}}" alt="{post.title}"
+                <a href="{% url 'view-post' s_post.pk %}"
+                  ><img src="{{s_post.banner_path.url}}" alt="{s_post.title}"
                 /></a>
               </div>
   
               <!-- Blog Content -->
               <div class="blog-content">
-                <span class="post-date">{{post.date_created|date:'M d, Y'}}</span>
-                <a href="{% url 'view-post' post.pk %}" class="post-title"
-                  >{{post.title}}</a
+                <span class="post-date">{{s_post.date_created|date:'M d, Y'}}</span>
+                <a href="{% url 'view-post' s_post.pk %}" class="post-title"
+                  >{{s_post.title}}</a
                 >
-                <a href="#" class="post-author">{% trans 'By'%} {{post.user.username}}</a>
-                <p>{{post.Description|truncatechars:100}}</p>
+                <a href="#" class="post-author">{% trans 'By'%} {{s_post.user.username}}</a>
+                <p>{{s_post.Description|truncatechars:100}}</p>
               </div>
             </div>
             {% endfor %}
@@ -35,9 +35,9 @@
         </div>
   
        
-    {% else %} {% endcomment %}
-      <h3 class="text-center"><b>{% trans 'All news'%}</b></h3>
-      
+    {% else %}
+
+    <h3 class="text-center"><b>{% trans 'All news'%}</b></h3>
     <center>
       <hr class="w-25" />
     </center>
@@ -68,8 +68,6 @@
         </div>
 
       </div>
-      {% comment %} {% endif %}
-      {% if not searched %} {% endcomment %}
       <div class="col-12 col-md-4 col-lg-3">
         <div class="sidebar-area">
           
@@ -77,7 +75,7 @@
           <div class="single-widget-area news-widget mb-30">
             <h4>{% trans 'Latest News'%}</h4>
 
-            {% for lpost in latest %}
+            {% for lpost in latest_top %}
             <!-- Single News Area -->
             <div class="single-blog-post d-flex style-4 mb-30">
               <!-- Blog Thumbnail -->
@@ -106,5 +104,6 @@
     </div>
   </div>
 </div>
+    {% endif %}
 <hr />
 {% endblock content %}

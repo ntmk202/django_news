@@ -12,7 +12,7 @@
             <h4 class="mb-30">{% trans 'Resource'%}</h4>
             {% if resources %}
             {% for resource in resources %}
-            <div class="media">
+            <div class="media my-3">
                 <img class="align-self-center mr-3" style="height: 100px; width: 100px" src="{{ resource.image.url }}" alt="{{ resource.title }}">
                 <div class="media-body align-self-center">
                   <p><a href="{{ resource.file.url }}" download> <u class="text-primary">{{ resource.title }}</u> </a></p>

@@ -12,7 +12,7 @@
             <h4 class="mb-30">{% trans 'Media'%}</h4>
             {% if media %}
                 {% for video_resource in media %}
-                <div class="card">
+                <div class="card my-3">
                     <div class="card-body">
                       <p class="card-text"><a href="{{ video_resource.postUrl }}">{{ video_resource.title }}</a></p>
                       <p class="card-text"><small class="text-muted">Last updated {{video_resource.date_created|timesince}} ago</small></p>
