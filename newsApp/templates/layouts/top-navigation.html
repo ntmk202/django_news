@@ -35,12 +35,12 @@
                                 <li><a href="{%url 'home-page'%}">{% trans 'Home'%}</a></li>
                                 <li><a href="{%url 'about-page'%}">{% trans 'About'%}</a></li>
                                 <li><a href="{%url 'news'%}">{% trans 'News'%}</a></li>
+                                {% comment %} {% for category in categories %}
+                                <li><a href="{% url 'category-post' category.id %}">{{category}}</a></li>
+                                {% endfor %}  {% endcomment %}
                                 <li><a href="{%url 'partners'%}">{% trans 'Partners'%}</a></li>
                                 <li><a href="{%url 'resources'%}">{% trans 'Resources'%}</a></li>
                                 <li><a href="{%url 'media'%}">{% trans 'Media'%}</a></li>
-                                {% comment %} {% for category in categories %}
-                                <li><a href="{% url 'category-post' category.id %}">{{category}}</a></li>
-                                {% endfor %} {% endcomment %}
                                 <li>
                                     {% get_current_language as CURRENT_LANGUAGE %}
                                     {% get_available_languages as AVAILABLE_LANGUAGES %}

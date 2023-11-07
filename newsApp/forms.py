@@ -77,21 +77,21 @@ class savePost(forms.ModelForm):
 
 
 # class saveComment(forms.ModelForm):
-    post = forms.CharField(max_length=30,label="Post")
-    name = forms.CharField(max_length=250,label="Name")
-    email = forms.CharField(max_length=250,label="Email")
-    subject = forms.CharField(max_length=250,label="Subject")
-    message = forms.CharField()
-    class Meta():
-        model = models.Comment
-        fields = ('post', 'name', 'email', 'subject','message',)
+#     post = forms.CharField(max_length=30,label="Post")
+#     name = forms.CharField(max_length=250,label="Name")
+#     email = forms.CharField(max_length=250,label="Email")
+#     subject = forms.CharField(max_length=250,label="Subject")
+#     message = forms.CharField()
+#     class Meta():
+#         model = models.Comment
+#         fields = ('post', 'name', 'email', 'subject','message',)
 
-    def clean_post(self):
-        postID = self.cleaned_data['post']
-        try:
-            post = models.Post.objects.get(id = postID)
-            return post
-        except:
-            raise forms.ValidationError(_('Post ID is invalid'))
+#     def clean_post(self):
+#         postID = self.cleaned_data['post']
+#         try:
+#             post = models.Post.objects.get(id = postID)
+#             return post
+#         except:
+#             raise forms.ValidationError(_('Post ID is invalid'))
 
     

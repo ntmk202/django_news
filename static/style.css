@@ -1,6 +1,6 @@
 /* [Master Stylesheet - v1.0] */
 /* :: 1.0 Import Fonts */
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900");
+/* @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900"); */
 /* :: 2.0 Import All CSS */
 @import url(css/bootstrap.min.css);
 @import url(css/classy-nav.css);
@@ -14,7 +14,8 @@
   padding: 0; }
 
 body {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family:  Arial, Helvetica, sans-serif;
   font-size: 14px; }
 
 h1,
@@ -23,17 +24,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family:  Arial, Helvetica, sans-serif;
   color: #000000;
   line-height: 1.3;
   font-weight: 700; }
 
 p {
-  font-family: "Raleway", sans-serif;
-  color: #858585;
+  /* font-family: "Raleway", sans-serif; */
+  font-family:  Arial, Helvetica, sans-serif;
+  color: #242424;
   font-size: 15px;
   line-height: 2;
-  font-weight: 400; }
+  font-weight: 500; }
 
 a,
 a:hover,
@@ -45,7 +48,8 @@ a:focus {
   color: #000000;
   font-weight: 600;
   font-size: 16px;
-  font-family: "Raleway", sans-serif; }
+  /* font-family: "Raleway", sans-serif; } */
+  font-family:  Arial, Helvetica, sans-serif;
 
 ul,
 ol {
@@ -224,10 +228,10 @@ img {
     transform: translate(19px, 0); } }
 /* :: 3.5.0 Miscellaneous */
 .tooltip-inner {
-  background-color: #ef1b48; }
+  background-color: #eab106; }
 
 .tooltip .arrow::before {
-  border-top-color: #ef1b48; }
+  border-top-color: #eab106; }
 
 .bg-img {
   background-position: center center;
@@ -414,7 +418,7 @@ img {
       flex: 0 0 180px;
       max-width: 180px;
       width: 180px;
-      background-color: #ef1b48;
+      background-color: #eab106;
       height: 55px; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .breaking-news-area .breaking-news-ticker .title {
@@ -557,7 +561,7 @@ img {
           font-size: 15px;
           padding: 0 20px; } }
       .footer-area .footer-nav li a:hover, .footer-area .footer-nav li a:focus {
-        color: #ef1b48; }
+        color: #eab106; }
   .footer-area .footer-social-info {
     position: relative;
     z-index: 1;
@@ -579,7 +583,7 @@ img {
       font-size: 12px;
       font-weight: 500; }
       .footer-area .copywrite-text a:hover, .footer-area .copywrite-text a:focus {
-        color: #ef1b48; }
+        color: #eab106; }
 
 /* :: 8.0 Footer Add Area */
 .big-add-area {
@@ -639,7 +643,7 @@ img {
         .single-blog-post.style-1 .blog-content .post-title {
           font-size: 16px; } }
       .single-blog-post.style-1 .blog-content .post-title:hover, .single-blog-post.style-1 .blog-content .post-title:focus {
-        color: #ef1b48; }
+        color: #eab106; }
   .single-blog-post.style-1:hover .blog-thumbnail img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
@@ -670,12 +674,12 @@ img {
       -webkit-transition-duration: 500ms;
       transition-duration: 500ms; }
       .single-blog-post.style-2 .blog-content .post-author:hover, .single-blog-post.style-2 .blog-content .post-author:focus {
-        color: #ef1b48; }
+        color: #eab106; }
   .single-blog-post.style-2:hover {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px); }
     .single-blog-post.style-2:hover .blog-content .post-title {
-      color: #ef1b48; }
+      color: #eab106; }
   .single-blog-post.style-3 .blog-thumbnail {
     margin-bottom: 20px;
     position: relative;
@@ -690,7 +694,7 @@ img {
       transform: translate(-50%, -50%);
       width: 63px;
       height: 63px;
-      background-color: #ef1b48;
+      background-color: #eab106;
       color: #ffffff;
       font-size: 24px;
       line-height: 63px;
@@ -724,7 +728,7 @@ img {
         .single-blog-post.style-3 .blog-content .post-title {
           font-size: 18px; } }
       .single-blog-post.style-3 .blog-content .post-title:hover, .single-blog-post.style-3 .blog-content .post-title:focus {
-        color: #ef1b48; }
+        color: #eab106; }
     .single-blog-post.style-3 .blog-content .post-author {
       display: block;
       font-size: 12px;
@@ -733,9 +737,9 @@ img {
       transition-duration: 500ms;
       font-weight: 500; }
       .single-blog-post.style-3 .blog-content .post-author:hover, .single-blog-post.style-3 .blog-content .post-author:focus {
-        color: #ef1b48; }
+        color: #eab106; }
   .single-blog-post.style-3:hover .blog-content .post-title {
-    color: #ef1b48; }
+    color: #eab106; }
   .single-blog-post.style-4 .blog-thumbnail {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 120px;
@@ -843,7 +847,7 @@ img {
       transform: translate(-50%, -50%);
       width: 44px;
       height: 44px;
-      background-color: #ef1b48;
+      background-color: #eab106;
       color: #ffffff;
       font-size: 18px;
       line-height: 44px;
@@ -875,9 +879,9 @@ img {
       line-height: 1.3; }
       .single-blog-post.style-6 .blog-content .post-title:hover, .single-blog-post.style-6 .blog-content .post-title:focus {
         font-weight: 600;
-        color: #ef1b48; }
+        color: #eab106; }
   .single-blog-post.style-6:hover .blog-content .post-title {
-    color: #ef1b48; }
+    color: #eab106; }
 
 .sidebar-area {
   position: relative;
@@ -1000,7 +1004,7 @@ img {
       .catagory-featured-post .post-content a {
         font-size: 24px; } }
     .catagory-featured-post .post-content a:hover, .catagory-featured-post .post-content a:focus {
-      color: #ef1b48; }
+      color: #eab106; }
   .catagory-featured-post .post-content p {
     color: #ffffff;
     font-size: 15px; }
@@ -1201,7 +1205,7 @@ img {
       .comment_area .comment-content .comment-meta .post-author:hover,
       .comment_area .comment-content .comment-meta .post-date:hover,
       .comment_area .comment-content .comment-meta .reply:hover {
-        color: #ef1b48; }
+        color: #eab106; }
     .comment_area .comment-content .comment-meta .reply {
       margin-right: 0; }
       .comment_area .comment-content .comment-meta .reply::after {
@@ -1228,7 +1232,7 @@ img {
   .featured-video-area .video-btn {
     width: 63px;
     height: 63px;
-    background-color: #ef1b48;
+    background-color: #eab106;
     color: #ffffff;
     font-size: 24px;
     line-height: 63px;
@@ -1256,7 +1260,7 @@ img {
 .video-slideshow {
   position: relative;
   z-index: 5;
-  border-top: 2px solid #ef1b48; }
+  border-top: 2px solid #eab106; }
   .video-slideshow::after {
     position: absolute;
     width: 100%;
@@ -1280,7 +1284,7 @@ img {
     margin-top: -20px;
     font-size: 18px;
     color: #ffffff;
-    background-color: #ef1b48;
+    background-color: #eab106;
     left: -20px;
     text-align: center;
     -webkit-transition-duration: 500ms;
@@ -1317,7 +1321,7 @@ img {
     font-size: 14px;
     color: #000000; }
     .contact-content .contact-social-info a:hover, .contact-content .contact-social-info a:focus {
-      color: #ef1b48; }
+      color: #eab106; }
   .contact-content .single-contact-info {
     position: relative;
     margin-bottom: 20px; }

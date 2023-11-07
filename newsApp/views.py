@@ -43,7 +43,7 @@ def home(request):
     context['videos'] = videos
     context['about_partner'] =  Partner.objects.all()
     context['latest_top'] = posts[:2]
-    context['latest_bottom'] = posts[2:12]
+    context['latest_bottom'] = posts[2:6]
     list_category = []
     for category in category_posts:
         list_category.append({
@@ -160,6 +160,15 @@ def save_post(request):
             form = forms.savePost(request.POST, request.FILES, instance= post)
     
         if form.is_valid():
+            
+            title = form.cleaned_data['title']
+            desc = form.cleaned_data['Description']
+            content = form.cleaned_data['content']
+            lang_code = request.LANGUAGE_CODE
+            if lang_code == 'en':
+                models.Post.objects.create(title=title, Description = desc, content = content, language=lang_code)
+            elif lang_code == 'vi':
+                models.Post.objects.create(title=_('Updating...'), Description = _('Updating...'), content = _('Updating...'), language=lang_code)
             form.save()
             if request.POST['id'] == '':
                 postID = models.Post.objects.all().last().id
@@ -324,10 +333,21 @@ def search_new(request):
     
 def new(request):
     context = context_data()
+    posts = models.Post.objects.filter(status = 1).order_by('-date_created').all()
+    page = request.GET.get('page', 1)
+    paginator = Paginator(posts, 5)
+
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        posts = paginator.page(1)
+    except EmptyPage:
+        posts = paginator.page(paginator.num_pages)
+
     context['page'] = 'new'
     context['page_title'] = _('News')
     context['about_partner'] =  Partner.objects.all()
-    context['posts'] = models.Post.objects.filter(status = 1).order_by('-date_created').all()
+    context['posts'] = posts
     context['latest_top'] = models.Post.objects.filter(status = 1).order_by('-date_created').all()[:3]
     return render(request, 'news.html', context)
 

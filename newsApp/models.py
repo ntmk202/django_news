@@ -4,6 +4,7 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 from embed_video.fields import EmbedVideoField
 from django.utils.translation import gettext_lazy as _
+from ckeditor.fields import RichTextField
 from parler.models import TranslatableModel, TranslatedFields
 
 
@@ -23,7 +24,7 @@ class Post(TranslatableModel):
     translations = TranslatedFields(
         title = models.TextField(_('title')),
         Description = models.TextField(_('short_description')),
-        content = models.TextField(_('content')),
+        content = RichTextField(_('content')),
     )
     status = models.CharField(_('status'),max_length=2, choices=(("1",_('Published')), ("2",_('Unpublished'))), default=2)
     category = models.ForeignKey(Category, related_name=_('category'), on_delete=models.CASCADE,default="")
@@ -67,10 +68,11 @@ class MediaPg(TranslatableModel):
     translations = TranslatedFields(
         title = models.TextField(_('title'))
     )
-    url = EmbedVideoField()
-    postUrl = models.URLField(_('postUrl'))
+    url = EmbedVideoField(verbose_name='Video url')
+    content = RichTextField(_('postUrl'), default='', null=True)
     date_created = models.DateTimeField(default=timezone.now)
     date_updated = models.DateTimeField(auto_now = True)
 
     def __st__(self):
         return str(self.title)
+    

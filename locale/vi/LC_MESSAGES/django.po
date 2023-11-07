@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-06 17:14+0700\n"
-"PO-Revision-Date: 2023-10-06 17:22+0000\n"
+"POT-Creation-Date: 2023-11-08 01:34+0700\n"
+"PO-Revision-Date: 2023-11-08 01:40+0000\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,24 +19,41 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: .\about\models.py:8 .\newsApp\models.py:13 .\newsApp\models.py:44
+#: .\about\models.py:8 .\newsApp\models.py:14 .\newsApp\models.py:44
 msgid "name"
 msgstr "Tên"
 
-#: .\about\models.py:14 .\newsApp\models.py:26
+#: .\about\models.py:9
+msgid "role"
+msgstr "Vai trò"
+
+#: .\about\models.py:10
+msgid "abbreviations"
+msgstr "Tên viết tắt"
+
+#: .\about\models.py:11
+msgid "country"
+msgstr "Quốc gia"
+
+#: .\about\models.py:13
+#| msgid "Partner"
+msgid "partnerUrl"
+msgstr "Đối tác"
+
+#: .\about\models.py:18 .\newsApp\models.py:27
 msgid "content"
 msgstr "Nội dung"
 
-#: .\about\models.py:19 .\newsApp\models.py:24 .\newsApp\models.py:58
+#: .\about\models.py:23 .\newsApp\models.py:25 .\newsApp\models.py:58
 #: .\newsApp\models.py:69
 msgid "title"
 msgstr "Tiêu đề"
 
-#: .\django_news\settings.py:130
+#: .\django_news\settings.py:137
 msgid "English"
 msgstr "en"
 
-#: .\django_news\settings.py:131
+#: .\django_news\settings.py:138
 msgid "Vietnamese"
 msgstr "vi"
 
@@ -60,41 +77,37 @@ msgstr "Trường Họ là bắt buộc."
 msgid "Selected User is invalid"
 msgstr "Người dùng đã chọn không hợp lệ"
 
-#: .\newsApp\forms.py:95
-msgid "Post ID is invalid"
-msgstr "ID bài đăng không hợp lệ"
-
-#: .\newsApp\models.py:15 .\newsApp\models.py:28
+#: .\newsApp\models.py:16 .\newsApp\models.py:29
 msgid "status"
 msgstr "Trạng thái"
 
-#: .\newsApp\models.py:15
+#: .\newsApp\models.py:16
 msgid "Active"
 msgstr "có hiệu lực"
 
-#: .\newsApp\models.py:15
+#: .\newsApp\models.py:16
 msgid "Inactive"
 msgstr "không có hiệu lực"
 
-#: .\newsApp\models.py:25
+#: .\newsApp\models.py:26
 msgid "short_description"
 msgstr "Mô tả"
 
-#: .\newsApp\models.py:28 .\newsApp\templates\manage_post.html:73
+#: .\newsApp\models.py:29 .\newsApp\templates\manage_post.html:73
 #: .\newsApp\templates\manage_post.html:75
 msgid "Published"
 msgstr "công khai"
 
-#: .\newsApp\models.py:28 .\newsApp\templates\manage_post.html:78
+#: .\newsApp\models.py:29 .\newsApp\templates\manage_post.html:78
 #: .\newsApp\templates\manage_post.html:80
 msgid "Unpublished"
 msgstr "không công khai"
 
-#: .\newsApp\models.py:29
+#: .\newsApp\models.py:30
 msgid "category"
 msgstr "Thể loại"
 
-#: .\newsApp\models.py:31
+#: .\newsApp\models.py:32
 msgid "banner_path"
 msgstr "Chủ đề"
 
@@ -121,19 +134,19 @@ msgstr "Giới thiệu"
 
 #: .\newsApp\templates\about.html:21
 #: .\newsApp\templates\layouts\top-navigation.html:37
-#: .\newsApp\templates\medias.html:33 .\newsApp\templates\partners.html:26
-#: .\newsApp\templates\resources.html:26 .\newsApp\views.py:229
+#: .\newsApp\templates\medias.html:33 .\newsApp\templates\partners.html:50
+#: .\newsApp\templates\resources.html:30 .\newsApp\views.py:348
 msgid "News"
 msgstr "Tin tức"
 
-#: .\newsApp\templates\about.html:48 .\newsApp\templates\home.html:35
-#: .\newsApp\templates\home.html:177 .\newsApp\templates\medias.html:60
-#: .\newsApp\templates\partners.html:53 .\newsApp\templates\resources.html:53
+#: .\newsApp\templates\about.html:48 .\newsApp\templates\home.html:37
+#: .\newsApp\templates\home.html:179 .\newsApp\templates\medias.html:60
+#: .\newsApp\templates\partners.html:77 .\newsApp\templates\resources.html:57
 msgid "Read more"
 msgstr "Xem thêm"
 
 #: .\newsApp\templates\about.html:53
-#: .\newsApp\templates\layouts\top-navigation.html:38
+#: .\newsApp\templates\layouts\top-navigation.html:42
 #: .\newsApp\templates\partners.html:12
 msgid "Partners"
 msgstr "Đối tác"
@@ -142,24 +155,27 @@ msgstr "Đối tác"
 msgid "Posts"
 msgstr "Bài đăng"
 
-#: .\newsApp\templates\category.html:30 .\newsApp\templates\home.html:98
-#: .\newsApp\templates\posts.html:29 .\newsApp\templates\posts.html:63
-#: .\newsApp\templates\single_post.html:28
+#: .\newsApp\templates\category.html:30 .\newsApp\templates\home.html:100
+#: .\newsApp\templates\news.html:29 .\newsApp\templates\news.html:64
+#: .\newsApp\templates\posts.html:64 .\newsApp\templates\single_post.html:20
 msgid "By"
 msgstr "Người đăng"
 
 #: .\newsApp\templates\category.html:51 .\newsApp\templates\category.html:65
-#: .\newsApp\templates\home.html:21
+#: .\newsApp\templates\home.html:21 .\newsApp\templates\news.html:85
+#: .\newsApp\templates\news.html:99
 msgid "Previous"
 msgstr "Trước"
 
 #: .\newsApp\templates\category.html:101 .\newsApp\templates\category.html:113
-#: .\newsApp\templates\home.html:25
+#: .\newsApp\templates\home.html:25 .\newsApp\templates\news.html:135
+#: .\newsApp\templates\news.html:147
 msgid "Next"
 msgstr "Sau"
 
-#: .\newsApp\templates\category.html:134 .\newsApp\templates\home.html:150
-#: .\newsApp\templates\posts.html:78 .\newsApp\templates\single_post.html:133
+#: .\newsApp\templates\category.html:134 .\newsApp\templates\home.html:152
+#: .\newsApp\templates\news.html:165 .\newsApp\templates\posts.html:80
+#: .\newsApp\templates\single_post.html:61
 msgid "Latest News"
 msgstr "Tin mới nhất"
 
@@ -167,23 +183,19 @@ msgstr "Tin mới nhất"
 msgid "Kick-off meeting in Mongolia"
 msgstr "Họp khởi động dự án tại Mông Cổ"
 
-#: .\newsApp\templates\home.html:32
+#: .\newsApp\templates\home.html:34
 msgid "Welcome to the Digital Move project"
 msgstr "Chào mừng đến với dự án Digital Move"
 
-#: .\newsApp\templates\home.html:52
+#: .\newsApp\templates\home.html:54
 msgid "All the news"
 msgstr "Tất cả"
 
-#: .\newsApp\templates\home.html:58
-msgid "See all"
-msgstr "Xem thêm"
-
 #: .\newsApp\templates\layouts\footer.html:9
 msgid "Project condinated by"
-msgstr "Dự án được quản lý bởi"
+msgstr "Dự án được điều phối bởi"
 
-#: .\newsApp\templates\layouts\footer.html:34
+#: .\newsApp\templates\layouts\footer.html:48
 msgid ""
 "Co-funded by the Erasmus+ Programme of the European Union. DIGITAL MOVE is "
 "co-financed by the European Commission through the Erasmus+ Programme, under"
@@ -197,16 +209,16 @@ msgstr ""
 msgid "Search"
 msgstr "Tìm kiếm"
 
-#: .\newsApp\templates\layouts\top-navigation.html:35 .\newsApp\views.py:41
+#: .\newsApp\templates\layouts\top-navigation.html:35 .\newsApp\views.py:42
 msgid "Home"
 msgstr "Trang chủ"
 
-#: .\newsApp\templates\layouts\top-navigation.html:39
+#: .\newsApp\templates\layouts\top-navigation.html:43
 msgid "Resources"
 msgstr "Tài nguyên"
 
-#: .\newsApp\templates\layouts\top-navigation.html:40
-#: .\newsApp\templates\medias.html:12 .\newsApp\views.py:339
+#: .\newsApp\templates\layouts\top-navigation.html:44
+#: .\newsApp\templates\medias.html:12 .\newsApp\views.py:374
 msgid "Media"
 msgstr "Truyền thông"
 
@@ -216,16 +228,15 @@ msgstr "Truyền thông"
 msgid "Login"
 msgstr "Đăng nhập"
 
-#: .\newsApp\templates\layouts\top-navigation.html:65 .\newsApp\views.py:132
+#: .\newsApp\templates\layouts\top-navigation.html:65 .\newsApp\views.py:133
 msgid "Profile"
 msgstr "Hồ sơ cá nhân"
 
-#: .\newsApp\templates\layouts\top-navigation.html:66 .\newsApp\views.py:145
+#: .\newsApp\templates\layouts\top-navigation.html:66 .\newsApp\views.py:146
 msgid "New Post"
 msgstr "Bài đăng mới"
 
-#: .\newsApp\templates\layouts\top-navigation.html:67
-#| msgid "All Posts"
+#: .\newsApp\templates\layouts\top-navigation.html:67 .\newsApp\views.py:239
 msgid "All Post"
 msgstr "Tất cả"
 
@@ -290,17 +301,41 @@ msgstr "Vui lòng chọn danh mục tại đây"
 msgid "Write your content here"
 msgstr "Viết nội dung của bạn ở đây"
 
-#: .\newsApp\templates\medias.html:26
+#: .\newsApp\templates\medias.html:26 .\newsApp\templates\resources.html:23
 msgid "No media resources available."
 msgstr "Không có tài nguyên truyền thông có sẵn."
 
-#: .\newsApp\templates\posts.html:5
+#: .\newsApp\templates\news.html:5
 msgid "Result of"
 msgstr "Kết quả tìm kiếm của"
 
-#: .\newsApp\templates\posts.html:39
+#: .\newsApp\templates\news.html:40 .\newsApp\templates\posts.html:40
 msgid "All news"
 msgstr "Tất cả"
+
+#: .\newsApp\templates\partners.html:27
+msgid "No."
+msgstr "STT"
+
+#: .\newsApp\templates\partners.html:28
+msgid "Role"
+msgstr "Vai trò"
+
+#: .\newsApp\templates\partners.html:29
+msgid "Short name"
+msgstr "Tên viết tắt"
+
+#: .\newsApp\templates\partners.html:30
+msgid "Legal name"
+msgstr "Tên chính thức"
+
+#: .\newsApp\templates\partners.html:31
+msgid "Country"
+msgstr "Quốc gia"
+
+#: .\newsApp\templates\partners.html:32
+msgid "Link"
+msgstr "Link"
 
 #: .\newsApp\templates\profile.html:7
 msgid "My Profile"
@@ -311,27 +346,23 @@ msgid "Fullname"
 msgstr "Tên đầy đủ"
 
 #: .\newsApp\templates\profile.html:27
-#: .\newsApp\templates\update_password.html:12 .\newsApp\views.py:112
+#: .\newsApp\templates\update_password.html:12 .\newsApp\views.py:113
 msgid "Update Password"
 msgstr "Cập nhật mật khẩu"
 
-#: .\newsApp\templates\profile.html:28 .\newsApp\views.py:91
+#: .\newsApp\templates\profile.html:28 .\newsApp\views.py:92
 msgid "Update Profile"
 msgstr "Cập nhật hồ sơ"
 
-#: .\newsApp\templates\resources.html:12 .\newsApp\views.py:330
+#: .\newsApp\templates\resources.html:12 .\newsApp\views.py:365
 msgid "Resource"
 msgstr "Tài nguyên"
 
-#: .\newsApp\templates\single_post.html:11
-msgid "No comment has been posted yet."
-msgstr "Không có bình luận nào"
-
-#: .\newsApp\templates\single_post.html:48 .\newsApp\views.py:140
+#: .\newsApp\templates\single_post.html:40 .\newsApp\views.py:141
 msgid "Edit Post"
 msgstr "Chỉnh sửa"
 
-#: .\newsApp\templates\single_post.html:49
+#: .\newsApp\templates\single_post.html:41
 msgid "Delete Post"
 msgstr "Xóa"
 
@@ -355,70 +386,81 @@ msgstr "Họ"
 msgid "Enter Password"
 msgstr "Mật khẩu "
 
-#: .\newsApp\views.py:15
-msgid "Simple News Portal"
-msgstr "Cổng thông tin"
-
 #: .\newsApp\views.py:17
 msgid "News Portal"
 msgstr "Cổng thông tin tin tức"
 
-#: .\newsApp\views.py:26
+#: .\newsApp\views.py:27
 msgid " About page"
 msgstr "Giới thiệu"
 
-#: .\newsApp\views.py:77 .\newsApp\views.py:79
+#: .\newsApp\views.py:78 .\newsApp\views.py:80
 msgid "Incorrect username or password"
 msgstr "Tên đăng nhập hoặc mật khẩu không chính xác"
 
-#: .\newsApp\views.py:101
+#: .\newsApp\views.py:102
 msgid "Profile has been updated"
 msgstr "Hồ sơ đã được cập nhật"
 
-#: .\newsApp\views.py:117
+#: .\newsApp\views.py:118
 msgid "Your Account Password has been updated successfully"
 msgstr "Mật khẩu tài khoản của bạn đã được cập nhật thành công"
 
-#: .\newsApp\views.py:169
+#: .\newsApp\views.py:171
+msgid "Updating..."
+msgstr "Đang cập nhật..."
+
+#: .\newsApp\views.py:179
 msgid "Post has been saved successfully."
 msgstr "Bài viết đã được lưu thành công."
 
-#: .\newsApp\views.py:178 .\newsApp\views.py:222
+#: .\newsApp\views.py:188 .\newsApp\views.py:232
 msgid "Request has no data sent."
 msgstr "Yêu cầu không có dữ liệu được gửi."
 
-#: .\newsApp\views.py:213
+#: .\newsApp\views.py:223
 msgid "Comment has been saved successfully."
 msgstr "Không có bình luận nào"
 
-#: .\newsApp\views.py:244 .\newsApp\views.py:249
+#: .\newsApp\views.py:254 .\newsApp\views.py:259
 msgid "File not Found"
 msgstr "Không tìm thấy tập tin"
 
-#: .\newsApp\views.py:279 .\newsApp\views.py:287
+#: .\newsApp\views.py:289 .\newsApp\views.py:297
 msgid "Post ID is Invalid"
 msgstr "ID bài đăng không hợp lệ"
 
-#: .\newsApp\views.py:284
+#: .\newsApp\views.py:294
 msgid "Post has been deleted successfully."
 msgstr "Bài viết đã được xóa thành công."
 
-#: .\newsApp\views.py:296 .\newsApp\views.py:304
+#: .\newsApp\views.py:306 .\newsApp\views.py:314
 msgid "Comment ID is Invalid"
 msgstr "ID bài đăng không hợp lệ"
 
-#: .\newsApp\views.py:301
+#: .\newsApp\views.py:311
 msgid "Comment has been deleted successfully."
 msgstr "Không có bình luận nào"
 
-#: .\newsApp\views.py:315
+#: .\newsApp\views.py:326
 msgid "Search for "
 msgstr "Tìm kiếm"
 
-#: .\newsApp\views.py:322
-#| msgid "Partners"
+#: .\newsApp\views.py:357
 msgid "Partner"
 msgstr "Đối tác"
+
+#~ msgid "Post ID is invalid"
+#~ msgstr "ID bài đăng không hợp lệ"
+
+#~ msgid "See all"
+#~ msgstr "Xem thêm"
+
+#~ msgid "No comment has been posted yet."
+#~ msgstr "Không có bình luận nào"
+
+#~ msgid "Simple News Portal"
+#~ msgstr "Cổng thông tin"
 
 #~ msgid ""
 #~ "Generate Lorem Ipsum placeholder text for use in your graphic, print and web"

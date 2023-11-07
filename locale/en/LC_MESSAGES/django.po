@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-06 17:14+0700\n"
-"PO-Revision-Date: 2023-10-06 17:21+0000\n"
+"POT-Creation-Date: 2023-11-08 01:34+0700\n"
+"PO-Revision-Date: 2023-11-08 01:37+0000\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,24 +19,41 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: .\about\models.py:8 .\newsApp\models.py:13 .\newsApp\models.py:44
+#: .\about\models.py:8 .\newsApp\models.py:14 .\newsApp\models.py:44
 msgid "name"
 msgstr "Name"
 
-#: .\about\models.py:14 .\newsApp\models.py:26
+#: .\about\models.py:9
+msgid "role"
+msgstr "Role"
+
+#: .\about\models.py:10
+msgid "abbreviations"
+msgstr "Short name"
+
+#: .\about\models.py:11
+msgid "country"
+msgstr "Country"
+
+#: .\about\models.py:13
+#| msgid "Partner"
+msgid "partnerUrl"
+msgstr "Partners"
+
+#: .\about\models.py:18 .\newsApp\models.py:27
 msgid "content"
 msgstr "Content"
 
-#: .\about\models.py:19 .\newsApp\models.py:24 .\newsApp\models.py:58
+#: .\about\models.py:23 .\newsApp\models.py:25 .\newsApp\models.py:58
 #: .\newsApp\models.py:69
 msgid "title"
 msgstr "Title"
 
-#: .\django_news\settings.py:130
+#: .\django_news\settings.py:137
 msgid "English"
 msgstr "en"
 
-#: .\django_news\settings.py:131
+#: .\django_news\settings.py:138
 msgid "Vietnamese"
 msgstr "vi"
 
@@ -60,41 +77,37 @@ msgstr "The  Last Name field is required."
 msgid "Selected User is invalid"
 msgstr "Selected User is invalid"
 
-#: .\newsApp\forms.py:95
-msgid "Post ID is invalid"
-msgstr "Post ID is invalid"
-
-#: .\newsApp\models.py:15 .\newsApp\models.py:28
+#: .\newsApp\models.py:16 .\newsApp\models.py:29
 msgid "status"
 msgstr "Status"
 
-#: .\newsApp\models.py:15
+#: .\newsApp\models.py:16
 msgid "Active"
 msgstr "active"
 
-#: .\newsApp\models.py:15
+#: .\newsApp\models.py:16
 msgid "Inactive"
 msgstr "inactive"
 
-#: .\newsApp\models.py:25
+#: .\newsApp\models.py:26
 msgid "short_description"
 msgstr "Short description"
 
-#: .\newsApp\models.py:28 .\newsApp\templates\manage_post.html:73
+#: .\newsApp\models.py:29 .\newsApp\templates\manage_post.html:73
 #: .\newsApp\templates\manage_post.html:75
 msgid "Published"
 msgstr "publish"
 
-#: .\newsApp\models.py:28 .\newsApp\templates\manage_post.html:78
+#: .\newsApp\models.py:29 .\newsApp\templates\manage_post.html:78
 #: .\newsApp\templates\manage_post.html:80
 msgid "Unpublished"
 msgstr "unpublish"
 
-#: .\newsApp\models.py:29
+#: .\newsApp\models.py:30
 msgid "category"
 msgstr "Category"
 
-#: .\newsApp\models.py:31
+#: .\newsApp\models.py:32
 msgid "banner_path"
 msgstr "Banner path"
 
@@ -121,19 +134,19 @@ msgstr "About"
 
 #: .\newsApp\templates\about.html:21
 #: .\newsApp\templates\layouts\top-navigation.html:37
-#: .\newsApp\templates\medias.html:33 .\newsApp\templates\partners.html:26
-#: .\newsApp\templates\resources.html:26 .\newsApp\views.py:229
+#: .\newsApp\templates\medias.html:33 .\newsApp\templates\partners.html:50
+#: .\newsApp\templates\resources.html:30 .\newsApp\views.py:348
 msgid "News"
 msgstr "News"
 
-#: .\newsApp\templates\about.html:48 .\newsApp\templates\home.html:35
-#: .\newsApp\templates\home.html:177 .\newsApp\templates\medias.html:60
-#: .\newsApp\templates\partners.html:53 .\newsApp\templates\resources.html:53
+#: .\newsApp\templates\about.html:48 .\newsApp\templates\home.html:37
+#: .\newsApp\templates\home.html:179 .\newsApp\templates\medias.html:60
+#: .\newsApp\templates\partners.html:77 .\newsApp\templates\resources.html:57
 msgid "Read more"
 msgstr "Read more"
 
 #: .\newsApp\templates\about.html:53
-#: .\newsApp\templates\layouts\top-navigation.html:38
+#: .\newsApp\templates\layouts\top-navigation.html:42
 #: .\newsApp\templates\partners.html:12
 msgid "Partners"
 msgstr "Partners"
@@ -142,24 +155,27 @@ msgstr "Partners"
 msgid "Posts"
 msgstr "Posts"
 
-#: .\newsApp\templates\category.html:30 .\newsApp\templates\home.html:98
-#: .\newsApp\templates\posts.html:29 .\newsApp\templates\posts.html:63
-#: .\newsApp\templates\single_post.html:28
+#: .\newsApp\templates\category.html:30 .\newsApp\templates\home.html:100
+#: .\newsApp\templates\news.html:29 .\newsApp\templates\news.html:64
+#: .\newsApp\templates\posts.html:64 .\newsApp\templates\single_post.html:20
 msgid "By"
 msgstr "By"
 
 #: .\newsApp\templates\category.html:51 .\newsApp\templates\category.html:65
-#: .\newsApp\templates\home.html:21
+#: .\newsApp\templates\home.html:21 .\newsApp\templates\news.html:85
+#: .\newsApp\templates\news.html:99
 msgid "Previous"
 msgstr "Previous"
 
 #: .\newsApp\templates\category.html:101 .\newsApp\templates\category.html:113
-#: .\newsApp\templates\home.html:25
+#: .\newsApp\templates\home.html:25 .\newsApp\templates\news.html:135
+#: .\newsApp\templates\news.html:147
 msgid "Next"
 msgstr "Next"
 
-#: .\newsApp\templates\category.html:134 .\newsApp\templates\home.html:150
-#: .\newsApp\templates\posts.html:78 .\newsApp\templates\single_post.html:133
+#: .\newsApp\templates\category.html:134 .\newsApp\templates\home.html:152
+#: .\newsApp\templates\news.html:165 .\newsApp\templates\posts.html:80
+#: .\newsApp\templates\single_post.html:61
 msgid "Latest News"
 msgstr "Latest News"
 
@@ -167,23 +183,19 @@ msgstr "Latest News"
 msgid "Kick-off meeting in Mongolia"
 msgstr "Kick-off meeting in Mongolia"
 
-#: .\newsApp\templates\home.html:32
+#: .\newsApp\templates\home.html:34
 msgid "Welcome to the Digital Move project"
 msgstr "Welcome to the Digital Move project"
 
-#: .\newsApp\templates\home.html:52
+#: .\newsApp\templates\home.html:54
 msgid "All the news"
 msgstr "All the news"
-
-#: .\newsApp\templates\home.html:58
-msgid "See all"
-msgstr "See all"
 
 #: .\newsApp\templates\layouts\footer.html:9
 msgid "Project condinated by"
 msgstr "Project coordinated by"
 
-#: .\newsApp\templates\layouts\footer.html:34
+#: .\newsApp\templates\layouts\footer.html:48
 msgid ""
 "Co-funded by the Erasmus+ Programme of the European Union. DIGITAL MOVE is "
 "co-financed by the European Commission through the Erasmus+ Programme, under"
@@ -197,16 +209,16 @@ msgstr ""
 msgid "Search"
 msgstr "Search"
 
-#: .\newsApp\templates\layouts\top-navigation.html:35 .\newsApp\views.py:41
+#: .\newsApp\templates\layouts\top-navigation.html:35 .\newsApp\views.py:42
 msgid "Home"
 msgstr "Home"
 
-#: .\newsApp\templates\layouts\top-navigation.html:39
+#: .\newsApp\templates\layouts\top-navigation.html:43
 msgid "Resources"
 msgstr "Resources"
 
-#: .\newsApp\templates\layouts\top-navigation.html:40
-#: .\newsApp\templates\medias.html:12 .\newsApp\views.py:339
+#: .\newsApp\templates\layouts\top-navigation.html:44
+#: .\newsApp\templates\medias.html:12 .\newsApp\views.py:374
 msgid "Media"
 msgstr "Media"
 
@@ -216,16 +228,15 @@ msgstr "Media"
 msgid "Login"
 msgstr "Login"
 
-#: .\newsApp\templates\layouts\top-navigation.html:65 .\newsApp\views.py:132
+#: .\newsApp\templates\layouts\top-navigation.html:65 .\newsApp\views.py:133
 msgid "Profile"
 msgstr "Profile"
 
-#: .\newsApp\templates\layouts\top-navigation.html:66 .\newsApp\views.py:145
+#: .\newsApp\templates\layouts\top-navigation.html:66 .\newsApp\views.py:146
 msgid "New Post"
 msgstr "New Post"
 
-#: .\newsApp\templates\layouts\top-navigation.html:67
-#| msgid "All Posts"
+#: .\newsApp\templates\layouts\top-navigation.html:67 .\newsApp\views.py:239
 msgid "All Post"
 msgstr "All Posts"
 
@@ -290,17 +301,41 @@ msgstr "Please select category here"
 msgid "Write your content here"
 msgstr "Write your content here"
 
-#: .\newsApp\templates\medias.html:26
+#: .\newsApp\templates\medias.html:26 .\newsApp\templates\resources.html:23
 msgid "No media resources available."
 msgstr "No media resources available."
 
-#: .\newsApp\templates\posts.html:5
+#: .\newsApp\templates\news.html:5
 msgid "Result of"
 msgstr "Result of"
 
-#: .\newsApp\templates\posts.html:39
+#: .\newsApp\templates\news.html:40 .\newsApp\templates\posts.html:40
 msgid "All news"
 msgstr "All news"
+
+#: .\newsApp\templates\partners.html:27
+msgid "No."
+msgstr "No."
+
+#: .\newsApp\templates\partners.html:28
+msgid "Role"
+msgstr "Role"
+
+#: .\newsApp\templates\partners.html:29
+msgid "Short name"
+msgstr "Short name"
+
+#: .\newsApp\templates\partners.html:30
+msgid "Legal name"
+msgstr "Legal name"
+
+#: .\newsApp\templates\partners.html:31
+msgid "Country"
+msgstr "Country"
+
+#: .\newsApp\templates\partners.html:32
+msgid "Link"
+msgstr "Link"
 
 #: .\newsApp\templates\profile.html:7
 msgid "My Profile"
@@ -311,27 +346,23 @@ msgid "Fullname"
 msgstr "Fullname"
 
 #: .\newsApp\templates\profile.html:27
-#: .\newsApp\templates\update_password.html:12 .\newsApp\views.py:112
+#: .\newsApp\templates\update_password.html:12 .\newsApp\views.py:113
 msgid "Update Password"
 msgstr "Update Password"
 
-#: .\newsApp\templates\profile.html:28 .\newsApp\views.py:91
+#: .\newsApp\templates\profile.html:28 .\newsApp\views.py:92
 msgid "Update Profile"
 msgstr "Update Profile"
 
-#: .\newsApp\templates\resources.html:12 .\newsApp\views.py:330
+#: .\newsApp\templates\resources.html:12 .\newsApp\views.py:365
 msgid "Resource"
 msgstr "Resource"
 
-#: .\newsApp\templates\single_post.html:11
-msgid "No comment has been posted yet."
-msgstr "No comment has been posted yet."
-
-#: .\newsApp\templates\single_post.html:48 .\newsApp\views.py:140
+#: .\newsApp\templates\single_post.html:40 .\newsApp\views.py:141
 msgid "Edit Post"
 msgstr "Edit Post"
 
-#: .\newsApp\templates\single_post.html:49
+#: .\newsApp\templates\single_post.html:41
 msgid "Delete Post"
 msgstr "Delete Post"
 
@@ -355,70 +386,81 @@ msgstr "Last Name"
 msgid "Enter Password"
 msgstr "Enter Password"
 
-#: .\newsApp\views.py:15
-msgid "Simple News Portal"
-msgstr "Simple News Portal"
-
 #: .\newsApp\views.py:17
 msgid "News Portal"
 msgstr "News Portal"
 
-#: .\newsApp\views.py:26
+#: .\newsApp\views.py:27
 msgid " About page"
 msgstr "About us"
 
-#: .\newsApp\views.py:77 .\newsApp\views.py:79
+#: .\newsApp\views.py:78 .\newsApp\views.py:80
 msgid "Incorrect username or password"
 msgstr "Incorrect username or password"
 
-#: .\newsApp\views.py:101
+#: .\newsApp\views.py:102
 msgid "Profile has been updated"
 msgstr "Profile has been updated"
 
-#: .\newsApp\views.py:117
+#: .\newsApp\views.py:118
 msgid "Your Account Password has been updated successfully"
 msgstr "Your Account Password has been updated successfully"
 
-#: .\newsApp\views.py:169
+#: .\newsApp\views.py:171
+msgid "Updating..."
+msgstr "Updating..."
+
+#: .\newsApp\views.py:179
 msgid "Post has been saved successfully."
 msgstr "Post has been saved successfully."
 
-#: .\newsApp\views.py:178 .\newsApp\views.py:222
+#: .\newsApp\views.py:188 .\newsApp\views.py:232
 msgid "Request has no data sent."
 msgstr "Request has no data sent."
 
-#: .\newsApp\views.py:213
+#: .\newsApp\views.py:223
 msgid "Comment has been saved successfully."
 msgstr "No comment has been posted yet."
 
-#: .\newsApp\views.py:244 .\newsApp\views.py:249
+#: .\newsApp\views.py:254 .\newsApp\views.py:259
 msgid "File not Found"
 msgstr "File not Found"
 
-#: .\newsApp\views.py:279 .\newsApp\views.py:287
+#: .\newsApp\views.py:289 .\newsApp\views.py:297
 msgid "Post ID is Invalid"
 msgstr "Post ID is invalid"
 
-#: .\newsApp\views.py:284
+#: .\newsApp\views.py:294
 msgid "Post has been deleted successfully."
 msgstr "Post has been deleted successfully."
 
-#: .\newsApp\views.py:296 .\newsApp\views.py:304
+#: .\newsApp\views.py:306 .\newsApp\views.py:314
 msgid "Comment ID is Invalid"
 msgstr "Post ID is invalid"
 
-#: .\newsApp\views.py:301
+#: .\newsApp\views.py:311
 msgid "Comment has been deleted successfully."
 msgstr "No comment has been posted yet."
 
-#: .\newsApp\views.py:315
+#: .\newsApp\views.py:326
 msgid "Search for "
 msgstr "Search"
 
-#: .\newsApp\views.py:322
-#| msgid "Partners"
+#: .\newsApp\views.py:357
 msgid "Partner"
 msgstr "Partners"
+
+#~ msgid "Post ID is invalid"
+#~ msgstr "Post ID is invalid"
+
+#~ msgid "See all"
+#~ msgstr "See all"
+
+#~ msgid "No comment has been posted yet."
+#~ msgstr "No comment has been posted yet."
+
+#~ msgid "Simple News Portal"
+#~ msgstr "Simple News Portal"
 
 #~ msgid ""
 #~ "Generate Lorem Ipsum placeholder text for use in your graphic, print and web"

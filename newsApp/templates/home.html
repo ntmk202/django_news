@@ -6,9 +6,9 @@
     <div class="carousel-inner">
       
       {% for banner in banners %}
-        <div class="carousel-item{% if forloop.first %} active{% endif %}">
-          <div class="h-75">
-            <img class="d-block w-100 h-75 bg-overlay img-fluid img-thumbnail" style="max-height: 600px" src="{{ banner.banner.url }}" alt="Slide">
+        <div class="carousel-item{% if forloop.first %} active{% endif %}" >
+          <div class="img-fluid" style="max-height: 800px">
+            <img class=" w-100 img-fluid bg-overlay" src="{{ banner.banner.url }}" alt="Slide">
           </div>
           <div class="carousel-caption d-none d-sm-block" style="background-image: linear-gradient(rgba(0, 0, 0,0), rgba(0, 0, 0,.2)); border-radius: 10px">
             <h1 class="text-white ms-5">{% trans 'Kick-off meeting in Mongolia' %}</h1>
@@ -27,12 +27,13 @@
   </div>
   <!--end carousel-->
 
-  <div class="big-add-area mb-50">
+  <div class="big-add-area mb-50" style="background-image: url('{% static 'img/bg-img/bg.png' %}'); background-blend-mode: overlay; background-repeat: no-repeat; background-color: rgba(255,255,255,.8)">
+    {% comment %} <img class="w-100 h-100" src="{% static 'img/bg-img/bg.jpg' %}"/> {% endcomment %}
     <div class="container-fluid">
       <h4 class="text-center my-5"> {% trans 'Welcome to the Digital Move project'%} </h4>
       <div class="row justify-content-center">
         <div class="col-12 col-lg-6">
-          <p class="text-black text-justify" style="max-height: 300px"> {{videos.title}}... <a style="font-size: 14px; color:gray; font-weight: 400 " href="{%url 'about-page'%}"> {%trans 'Read more'%} </a> </p>
+          <p class="text-dark text-justify" style="max-height: 300px"> {{videos.title}}... <a style="font-size: 14px; color:blue; font-weight: 400 " href="{%url 'about-page'%}"> {%trans 'Read more'%} </a> </p>
         </div>
         <div class="col-12 col-lg-6">
           <div class="d-flex justify-content-center">{% video videos.url 'small' %}</div>
@@ -50,15 +51,14 @@
             <!-- Intro News Filter -->
             <div class="intro-news-filter d-flex justify-content-between">
               <h6>{% trans 'All the news'%}</h6>
-              <nav>
+              {% comment %} <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                   <a
                     class="nav-item nav-link active"
-                    href="{%url 'news' %}"
-                    >{% trans 'See all'%}</a
-                  >
+                    href="{%url 'category-post' category.(id==1) %}"
+                    >{% trans 'See all'%}</a>
                 </div>
-              </nav>
+              </nav> {% endcomment %}
             </div>
             <div class="tab-content" id="nav-tabContent">
               <div
