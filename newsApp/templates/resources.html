@@ -2,7 +2,7 @@
 
 <!-- ##### Intro News Area Start ##### -->
 <section class="intro-news-area">
-  <div class="big-add-area mb-50" style="border-top: 1px solid #ef1b48">
+  <div class="big-add-area mb-50" style="border-top: 1px solid #156597">
     <div class="container mt-30">
       <div class="row justify-content-center">
         <!-- Intro News Tabs Area -->
@@ -12,10 +12,10 @@
             <h4 class="mb-30">{% trans 'Resource'%}</h4>
             {% if resources %}
             {% for resource in resources %}
-            <div class="media my-3">
-                <img class="align-self-center mr-3" style="height: 100px; width: 100px" src="{{ resource.image.url }}" alt="{{ resource.title }}">
-                <div class="media-body align-self-center">
-                  <p><a href="{{ resource.file.url }}" download> <u class="text-primary">{{ resource.title }}</u> </a></p>
+            <div class="media d-flex flex-wrap my-3 mb-30">
+                <img class="align-self-center mr-3 rounded" style="width: 200px" src="{{ resource.image.url }}" alt="{{ resource.title }}">
+                <div class="media-body">
+                  <a href="{{ resource.file.url }}" class="text-primary lead" download>{{ resource.title }}</a>
                 </div>
             </div>                
             {% endfor %}

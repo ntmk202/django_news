@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 from embed_video.fields import EmbedVideoField
 from django.utils.translation import gettext_lazy as _
 from ckeditor.fields import RichTextField
+from django_jsonform.models.fields import JSONField
 from parler.models import TranslatableModel, TranslatedFields
 
 
@@ -68,8 +69,25 @@ class MediaPg(TranslatableModel):
     translations = TranslatedFields(
         title = models.TextField(_('title'))
     )
-    url = EmbedVideoField(verbose_name='Video url')
-    content = RichTextField(_('postUrl'), default='', null=True)
+    url = EmbedVideoField(verbose_name='Video url', null=True, blank=True)
+    content = JSONField(schema={
+        'type': 'array',
+        'title': 'Links',
+        'items': {
+            'type': 'object',
+            'properties': {
+                'title':{
+                    "type": "string",
+                    "title":"Title"
+                },
+                'url': {
+                    'type': 'string',
+                    'format': 'url',
+                    'title': 'URL'
+                }
+            }
+        }
+    }, null=True)
     date_created = models.DateTimeField(default=timezone.now)
     date_updated = models.DateTimeField(auto_now = True)
 

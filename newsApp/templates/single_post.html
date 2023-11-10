@@ -14,7 +14,7 @@
                 <!-- Post Content -->
                 <div class="post-content">
                     <p class="tag"><span>{{post.category}}</span></p>
-                    <p class="post-title">{{post.title}}</p>
+                    <h1 class="text-white">{{post.title}}</h1>
                     <div class="d-flex align-items-center">
                         <span class="post-date mr-30">{{post.date_created|date:"M d, Y"}}</span>
                         <span class="post-date">{% trans 'By'%} {{post.user.username}}</span>
@@ -32,16 +32,13 @@
         <div class="row justify-content-center">
             <!-- Post Details Content Area -->
             <div class="col-12 col-lg-8">
-                <div class="mb-2">
-                    <img src="{{post.banner_path.url}}" alt="{{post.title}}" class="image-fluid w-100">
-                </div>
+                <div class="post-details-content mb-100 text-justify"><p>{{post.content|safe}}</p></div>
                 {% if actions %}
                 <div class="mb-3">
                     <a href="{% url 'edit-post' post.id %}" class="btn btn-primary btn-sm rounded-0"><i class="fa fa-edit"></i> {% trans 'Edit Post'%}</a>
                     <button type="button" id="delete-post" class="btn btn-danger btn-sm rounded-0"><i class="fa fa-trash"></i>{% trans 'Delete Post'%}</button>
                 </div>
                 {% endif %}
-                <div class="post-details-content mb-100 text-justify"><p>{{post.content|safe}}</p></div>
 
             </div> 
 
@@ -70,7 +67,7 @@
                             <!-- Blog Content -->
                             <div class="blog-content">
                                 <span class="post-date">{{lpost.date_created|date:"M d, Y"}}</span>
-                                <a href="{% url 'view-post' lpost.pk %}" class="post-title">{{lpost.title}}</a>
+                                <a href="{% url 'view-post' lpost.pk %}" class="post-title">{{lpost.title|truncatechars:50}}</a>
                             </div>
                         </div>
                         {% endfor %}

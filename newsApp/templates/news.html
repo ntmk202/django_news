@@ -42,7 +42,7 @@
       <hr class="w-25" />
     </center>
     <div class="row mt-5">
-      <div class="col-12 col-md-8 col-lg-9">
+      <div class="col-12 col-md-8 col-lg-8">
         <section>
           <div id="post-list">
             {% for post in posts %}
@@ -93,7 +93,7 @@
                     href="?page={{posts.previous_page_number}}"
                     tabindex="-1"
                     aria-label="Previous"
-                    style="color: #156597"
+                    style="color: gray"
                   >
                     <span aria-hidden="true">&laquo;</span>
                     <span class="sr-only">{% trans 'Previous'%}</span>
@@ -104,7 +104,7 @@
                 <li class="page-item">
                   <a
                     class="page-link"
-                    style="color: #156597"
+                    style="color: gray"
                     href="?page={{posts.previous_page_number}}"
                     >{{posts.previous_page_number}}</a
                   >
@@ -118,7 +118,7 @@
                 <li class="page-item">
                   <a
                     class="page-link"
-                    style="color: #156597"
+                    style="color: gray"
                     href="?page={{posts.next_page_number}}"
                     >{{posts.next_page_number}}</a
                   >
@@ -128,7 +128,7 @@
                 <li class="page-item">
                   <a class="page-link" 
                     aria-label="Next"
-                    style="color: #156597" 
+                    style="color: gray" 
                     href="?page={{posts.next_page_number}}"
                     >
                     <span aria-hidden="true">&raquo;</span>
@@ -157,7 +157,7 @@
 
       </div>
 
-      <div class="col-12 col-md-4 col-lg-3">
+      <div class="col-12 col-md-4 col-lg-4">
         <div class="sidebar-area">
           
           <!-- Latest News Widget -->
@@ -180,7 +180,7 @@
                   >{{lpost.date_created|date:"M d, Y"}}</span
                 >
                 <a href="{% url 'view-post' lpost.pk %}" class="post-title"
-                  >{{lpost.title}}</a
+                  >{{lpost.title|truncatechars:50}}</a
                 >
               </div>
             </div>
