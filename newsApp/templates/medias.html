@@ -16,7 +16,7 @@
                     <div class="card-body">
                       <h6 class="card-text">{{ video_resource.title }}</h6>
                       {%for link in video_resource.content%}
-                      <a class="card-text mx-1" href="{{link.url}}"><small class="text-primary font-weight-normal bg-light p-2 rounded" >{{ link.title }}</small></a>
+                      <a class="card-text m-1" href="{{link.url}}"><small class="text-primary font-weight-normal bg-light p-2 rounded" >{{ link.title }}</small></a>
                       {%endfor%}
                       <p class="card-text"><small class="text-muted">Last updated {{video_resource.date_created|timesince}} ago</small></p>
                     </div>

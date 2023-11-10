@@ -12,11 +12,16 @@
             <h4 class="mb-30">{% trans 'Resource'%}</h4>
             {% if resources %}
             {% for resource in resources %}
-            <div class="media d-flex flex-wrap my-3 mb-30">
-                <img class="align-self-center mr-3 rounded" style="width: 200px" src="{{ resource.image.url }}" alt="{{ resource.title }}">
-                <div class="media-body">
-                  <a href="{{ resource.file.url }}" class="text-primary lead" download>{{ resource.title }}</a>
-                </div>
+            <div class="single-blog-post d-flex style-4 mb-30">
+                <!-- Blog Thumbnail -->
+              <div class="blog-thumbnail">
+                <img class="rounded" src="{{ resource.image.url }}" alt="{{ resource.title }}"/>
+              </div>
+              <!-- Blog Content -->
+              <div class="blog-content align-self-center">
+                <a href="{{ resource.file.url }}" class="post-title text-primary lead " download
+                  >{{ resource.title|truncatechars:50 }}</a>
+              </div>
             </div>                
             {% endfor %}
             {% else %}
